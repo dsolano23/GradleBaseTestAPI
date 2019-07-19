@@ -1,0 +1,26 @@
+2019-07-14 16:10:59 | DEBUG | [Test worker] b.c.BaseHttpClient:177 - SEND POST REQUEST: POST http://35.205.254.105:8080/rest/raven/1.0/import/feature?projectKey=LudaTestManager HTTP/1.1
+with body:
+org.apache.http.entity.mime.MultipartFormEntity@af84a5e
+2019-07-14 16:11:00 | DEBUG | [Test worker] b.c.BaseHttpClient:180 - RESPONSE OF POST REQUEST: 
+[{"id":"10082","key":"LTM-83","self":"http://35.205.254.105:8080/rest/api/2/issue/10082"},{"id":"10083","key":"LTM-84","self":"http://35.205.254.105:8080/rest/api/2/issue/10083"}]
+2019-07-14 16:11:00 | DEBUG | [Test worker] b.c.BaseHttpClient:72 - SEND GET REQUEST: GET http://dummy.restapiexample.com/api/v1/employees HTTP/1.1
+2019-07-14 16:11:00 | DEBUG | [Test worker] b.c.BaseHttpClient:74 - RESPONSE OF GET REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Sun, 14 Jul 2019 14:11:00 GMT, Server: Apache, Expires: Thu, 19 Nov 1981 08:52:00 GMT, Cache-Control: no-store, no-cache, must-revalidate, Pragma: no-cache, Access-Control-Allow-Origin: *, Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client, Set-Cookie: PHPSESSID=40c438cda2a9ce7b27fc06dd0978c681; path=/, Upgrade: h2,h2c, Connection: Upgrade, Keep-Alive, Vary: Accept-Encoding, Referrer-Policy: , Keep-Alive: timeout=5, max=75, Content-Type: text/html; charset=UTF-8] org.apache.http.client.entity.DecompressingEntity@4603fca}
+2019-07-14 18:25:38 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-14 18:25:38 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : null.properties
+2019-07-14 18:25:38 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/null.properties
+2019-07-14 18:25:38 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-14 18:25:38 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-14 18:42:10 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-14 18:42:10 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : null.properties
+2019-07-14 18:42:10 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/null.properties
+2019-07-14 18:42:10 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-14 18:42:11 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-14 18:42:53 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-14 18:42:53 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : localEnv.properties
+2019-07-14 18:42:53 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/localEnv.properties
+2019-07-14 18:42:54 | INFO  | [Test worker] c.g.e.TestEnvironment:59 - *************************************
+2019-07-14 18:42:54 | INFO  | [Test worker] c.g.e.TestEnvironment:60 -  Started Test doing a get 
+2019-07-14 18:42:54 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:72 - SEND GET REQUEST: GET http://dummy.restapiexample.com/api/v1/employees HTTP/1.1
+2019-07-14 18:42:55 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:74 - RESPONSE OF GET REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Sun, 14 Jul 2019 16:42:55 GMT, Server: Apache, Expires: Thu, 19 Nov 1981 08:52:00 GMT, Cache-Control: no-store, no-cache, must-revalidate, Pragma: no-cache, Access-Control-Allow-Origin: *, Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client, Set-Cookie: PHPSESSID=174a67eea9e0e887b3c8b806969e3c4c; path=/, Upgrade: h2,h2c, Connection: Upgrade, Keep-Alive, Vary: Accept-Encoding, Referrer-Policy: , Keep-Alive: timeout=5, max=75, Content-Type: text/html; charset=UTF-8] org.apache.http.client.entity.DecompressingEntity@126a9d3}
+2019-07-14 18:42:55 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-14 18:42:56 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports

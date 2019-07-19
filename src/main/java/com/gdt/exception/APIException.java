@@ -1,6 +1,6 @@
 package com.gdt.exception;
 
-import com.gdt.exception.beans.ErrorDTO;
+import com.gdt.exception.beans.ErrorDto;
 import com.gdt.exception.beans.ObjectErrorBean;
 import com.gdt.exception.constants.ErrorsEnum;
 
@@ -24,13 +24,13 @@ public class APIException extends Exception{
 	 */
 	private String type;
 
-	private ErrorDTO error;
-	private ErrorDTO[] errors;
+	private ErrorDto error;
+	private ErrorDto[] errors;
 	/**
 	 * Constructor based on Error Enum main error catalog
 	 * @param error
 	 */
-	public APIException(ErrorDTO error){
+	public APIException(ErrorDto error){
 		super("Error:"+ error.getCode() +" Cause: "+error.getDetail());
 		this.type = error.getType();
 		this.code= error.getCode();
@@ -44,7 +44,7 @@ public class APIException extends Exception{
 		errors = error.getObjErrors();
 	}
 
-	public APIException(ErrorDTO[] errors){
+	public APIException(ErrorDto[] errors){
 		this.errors = errors;
 	}
 
@@ -94,15 +94,15 @@ public class APIException extends Exception{
 		this.detail = detail;
 	}
 
-	public ErrorDTO getError() {
+	public ErrorDto getError() {
 		return error;
 	}
 
-	public void setError(ErrorDTO error) {
+	public void setError(ErrorDto error) {
 		this.error = error;
 	}
 
-	public ErrorDTO[] getErrors() {
+	public ErrorDto[] getErrors() {
 		return errors;
 	}
 }

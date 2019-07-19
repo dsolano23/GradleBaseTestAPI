@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class ObjectErrorBean {
 
-    ErrorDTO[] objErrors;
+    ErrorDto[] objErrors;
 
-    public ErrorDTO[] getObjErrors() {
+    public ErrorDto[] getObjErrors() {
         return objErrors;
     }
 
-    public void setObjErrors(ErrorDTO[] objErrors) {
+    public void setObjErrors(ErrorDto[] objErrors) {
         this.objErrors = objErrors;
     }
 

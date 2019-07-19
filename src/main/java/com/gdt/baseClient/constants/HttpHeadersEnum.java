@@ -7,15 +7,19 @@ package com.gdt.baseClient.constants;
  */
 public enum HttpHeadersEnum {
 
-    ACCESS_CONTROLL_REQUEST_XAUTH("x-auth-token",null),
+    ACCESS_CONTROLL_REQUEST_XAUTH("x-auth-token",""),
+    AUTHORIZATION("Authorization",""),
     AUTHORIZATION_BASIC("Authorization","Basic"),
+    CONTENT_TYPE("Content-Type",""),
     CONTENT_TYPE_HTML("Content-Type","text/html"),
     CONTENT_TYPE_JSON("Content-Type","application/json"),
     CONTENT_TYPE_MULTIPART_FORM("Content-Type","multipart/form-data"),
+    ACCEPT("Accept",""),
     ACCEPT_CHARSET_UTF8("Accept-Charset","utf-8"),
     ACCEPT_CHARSET_ISO("Accept-Charset","iso-8859-1"),
     ACCEPT_HTML("Accept","text/html"),
-    ACCEPT_JSON("Accept","application/json");
+    ACCEPT_JSON("Accept","application/json"),
+    ACCEPT_LANGUAGE("Accept-Language","");
 
     /**
      * the header key to put in header request

@@ -108,8 +108,8 @@ dependencies {
 
     compile group: 'org.apache.httpcomponents', name: 'httpmime', version: httpMineVersion
     
-    testCompile group: 'io.rest-assured', name: 'rest-assured', version: restAssuredVersion
-    
+    compile group: 'io.rest-assured', name: 'rest-assured', version: restAssuredVersion
+
     compile group: 'com.google.code.gson', name: 'gson', version: gsonVersion
 
 }

@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@Login01",  "@LoginFunctionality", ] ,
+        labels:  [ "@CreateFQAs",  "@FQAs",  "@SmokeTest",  "@UpdateFQAsRestriction", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00, ]             },
+                data:  [ 20.00,  20.00,  20.00,  20.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00, ]             },
+                data:  [ 20.00,  20.00,  20.00,  20.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00, ]             },
+                data:  [ 60.00,  60.00,  60.00,  60.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00, ]             }
+                data:  [ 0.00,  0.00,  0.00,  0.00, ]             }
         ]
     };
 
@@ -134,7 +134,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
               <td>1</td>
-            <td>14 Jul 2019, 18:42</td>
+            <td>18 Jul 2019, 17:36</td>
     </tr>
   </tbody>
 </table>
@@ -196,71 +196,105 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-tag_4025192137.html">@Login01</a></td>
+        <td class="tagname"><a href="report-tag_2173983160.html">@CreateFQAs</a></td>
 
-        <td      class="passed"    >1</td>
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >12</td>
+        <td     class="skipped"   >36</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
+        <td class="total">60</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
-        <td class="total">1</td>
+        <td  class="failed"    >12</td>
+        <td class="total">12</td>
 
-        <td class="duration" data-value="1123162895">1.123</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="13078131261">13.078</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-tag_2477411137.html">@LoginFunctionality</a></td>
+        <td class="tagname"><a href="report-tag_2208754332.html">@FQAs</a></td>
 
-        <td      class="passed"    >1</td>
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >12</td>
+        <td     class="skipped"   >36</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
+        <td class="total">60</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
-        <td class="total">1</td>
+        <td  class="failed"    >12</td>
+        <td class="total">12</td>
 
-        <td class="duration" data-value="1123162895">1.123</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="13078131261">13.078</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_2341313088.html">@SmokeTest</a></td>
+
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >12</td>
+        <td     class="skipped"   >36</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">60</td>
+
+        <td >0</td>
+        <td  class="failed"    >12</td>
+        <td class="total">12</td>
+
+        <td class="duration" data-value="13078131261">13.078</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_402356453.html">@UpdateFQAsRestriction</a></td>
+
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >12</td>
+        <td     class="skipped"   >36</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">60</td>
+
+        <td >0</td>
+        <td  class="failed"    >12</td>
+        <td class="total">12</td>
+
+        <td class="duration" data-value="13078131261">13.078</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>2</td>
+      <td>48</td>
+      <td>48</td>
+      <td>144</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
+      <td>240</td>
 
-      <td>2</td>
       <td>0</td>
-      <td>2</td>
+      <td>48</td>
+      <td>48</td>
 
-      <td class="duration">2.246</td>
-      <td>2</td>
+      <td class="duration">52.312</td>
+      <td>4</td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+            <td>20.00%</td>
+      <td>20.00%</td>
+      <td>60.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
+      <td>0.00%</td>
       <td>100.00%</td>
+      <td></td>
+      <td></td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>
