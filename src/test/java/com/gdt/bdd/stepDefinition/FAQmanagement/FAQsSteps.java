@@ -1,21 +1,17 @@
 package com.gdt.bdd.stepDefinition.FAQmanagement;
 
-import com.gdt.baseClient.models.StandardResponse;
+import com.gdt.baseClient.beans.RestIterationDto;
 import com.gdt.enviroment.ScenarioContext;
 import com.gdt.models.beans.FAQsDto;
 import com.gdt.models.controllers.FAQsController;
 import com.gdt.models.faqs.CreateFAQsRequest;
-import com.gdt.models.faqs.UpdateFAQsRequest;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import utils.CucumberConstants;
 import utils.CucumberDataManagement;
 
 public class FAQsSteps {
 
-    FAQsController client = new FAQsController(2, 15000);
+    FAQsController client = new FAQsController();
     /**
      * The Logger
      */
@@ -24,10 +20,10 @@ public class FAQsSteps {
     private static final Integer stingLimitLengthDefault = 255;
     private static final Integer stingLimitLengthCustomized = 300;
 
-    private ScenarioContext environment;
+    private ScenarioContext scenarioContext;
 
-    public FAQsSteps(ScenarioContext environment) {
-        this.environment=environment;
+    public FAQsSteps(ScenarioContext scenarioContext) {
+        this.scenarioContext=scenarioContext;
     }
 
     @Given("^The FAQ from with the data: code: (.+), answer: (.+), question: (.+), link: (.+)$")
@@ -45,22 +41,23 @@ public class FAQsSteps {
         if ((CucumberDataManagement.setValue(link))) {
             virtualFAQ.setLink(CucumberDataManagement.getValidString(link,stingLimitLengthCustomized));
         }
-        this.environment.put(FAQsController.CREATE_FAQs_FROM, virtualFAQ);
+        this.scenarioContext.put(FAQsController.CREATE_FAQs_FROM, virtualFAQ);
     }
 
-    @When("^Try to create the new FAQ$")
-    public void try_to_create_the_new_faq() throws Throwable {
+    @When("^Try to create the new FAQ (.+)$")
+    public void try_to_create_the_new_faq(String requestId) throws Throwable {
 
-        if( environment.get(FAQsController.CREATE_FAQs_FROM) != null && environment.get(FAQsController.CREATE_FAQs_FROM) instanceof FAQsDto ){
-            FAQsDto virtualFAQ = (FAQsDto) environment.get(FAQsController.CREATE_FAQs_FROM);
+        if( scenarioContext.get(FAQsController.CREATE_FAQs_FROM) != null && scenarioContext.get(FAQsController.CREATE_FAQs_FROM) instanceof FAQsDto ){
+            FAQsDto virtualFAQ = (FAQsDto) scenarioContext.get(FAQsController.CREATE_FAQs_FROM);
             CreateFAQsRequest createFAQsRequest = new CreateFAQsRequest(virtualFAQ);
-            StandardResponse standardResponse = client.createFAQs(environment,createFAQsRequest);
-            environment.put(ScenarioContext.HTTP_STATUS_CODE, standardResponse.getRawResponse().getRequestHttpCode());
-            environment.put(ScenarioContext.HTTP_ELAPSED_TIME_RESPOND, standardResponse.getRawResponse().getElapsedTime());
-            environment.put(FAQsController.FAQ_RESPONSE, standardResponse);
+            RestIterationDto restIterationDto = client.createFAQs(scenarioContext,createFAQsRequest);
+            scenarioContext.put(requestId,restIterationDto);
+            /*tRequestHttpCode());
+            environment.put(ScenarioContext.HTTP_ELAPSED_TIME_RESPOND, restIterationDto.getRawResponse().getElapsedTime());
+            environment.put(FAQsController.FAQ_RESPONSE, restIterationDto);*/
         }
     }
-
+/*
     @When("^Try to updated the FAQ with the values: id: anyone, code: (.+), answer: (.+), question: (.+), link: (.+)$")
     public void try_to_update_the_a_faq(String code, String answer, String question, String link) throws Throwable {
         FAQsDto virtualFAQ = new FAQsDto();
@@ -143,6 +140,6 @@ public class FAQsSteps {
             assertTrace = "The response of FAQ object will come with the values ERROR  Received: link: " + resultReceived +" & Expected link: " + resultExpected;
             Assert.assertEquals(assertTrace, resultExpected, resultReceived);
         }
-    }
+    }*/
 
 }

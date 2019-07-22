@@ -1,6 +1,6 @@
 package com.gdt.enviroment;
 
-import com.gdt.baseClient.clients.ApacheHttpClient;
+import com.gdt.baseClient.client.RestAssuredClient;
 import com.gdt.exception.NotFoundResourceException;
 
 import io.cucumber.core.api.Scenario;
@@ -33,11 +33,11 @@ public class ScenarioContext {
 		// not delete
 	}
 
-	public static ApacheHttpClient getApiClient() {
+	public static RestAssuredClient getApiClient() {
         return apiClient;
     }
 
-    private static ApacheHttpClient apiClient;
+    private static RestAssuredClient apiClient;
 
     /**
      * Singleton instance strategy
@@ -49,7 +49,7 @@ public class ScenarioContext {
         return testScenario;
     }
 
-    public static ApacheHttpClient setApiClient(ApacheHttpClient client){
+    public static RestAssuredClient setApiClient(RestAssuredClient client){
         return apiClient;
     }
     public static String getScenarioName() {

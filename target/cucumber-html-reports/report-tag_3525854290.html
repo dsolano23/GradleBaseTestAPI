@@ -80,7 +80,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
               <td>1</td>
-            <td>17 Jul 2019, 15:40</td>
+            <td>22 Jul 2019, 17:08</td>
     </tr>
   </tbody>
 </table>
@@ -133,9 +133,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@CreateFQAsRestriction</td>
-          <td      class="passed"    >24</td>
+          <td      class="passed"    >25</td>
           <td      class="failed"    >12</td>
-          <td     class="skipped"   >12</td>
+          <td     class="skipped"   >11</td>
           <td >0</td>
           <td >0</td>
           <td class="total">48</td>
@@ -144,7 +144,7 @@ $(document).ready(function() {
           <td  class="failed"    >12</td>
           <td class="total">12</td>
 
-          <td class="duration" data-value="11266348814">11.266</td>
+          <td class="duration" data-value="18211620108">18.211</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -190,7 +190,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">1.452</span>
+  <span class="lead-duration duration">3.298</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -225,9 +225,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -264,7 +264,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">Example01</span>, question: <span class="argument">Example01</span>, link: <span class="argument">Example01</span></span>
   
-  <span class="lead-duration duration">0.217</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -287,9 +287,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-01</span></span>
   
-  <span class="lead-duration duration">1.230</span>
+  <span class="lead-duration duration">3.291</span>
 
 </div>
 
@@ -311,35 +311,36 @@ $(document).ready(function() {
         <div id="output-4" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;answer&quot;: &quot;Example01&quot;,
-			  &quot;question&quot;: &quot;Example01&quot;,
-			  &quot;link&quot;: &quot;Example01&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='null
+					, answer='Example01
+					, question='Example01
+					, link='Example01
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:21 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -1207</p></pre>
+			elapsedTime=2475
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:15 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 2475</p></pre>
         </div>
       </div>
       </div>
@@ -351,11 +352,36 @@ Respond{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-01</span> Http <span class="argument">200</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -369,41 +395,16 @@ Respond{
           <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
+        <pre>java.lang.AssertionError:  Bad The API response Code - Received: 0 &amp; Expected: 401 expected:&lt;401&gt; but was:&lt;0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_message_will_be(ApiCommonValidations.java:101)
+	at &#10045;.The api message error code will be 401(file:src/test/resources/features/FAQs/CreateFQAs.feature:22)
 </pre>
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
 
 
         
@@ -438,9 +439,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -475,7 +476,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.858</span>
+  <span class="lead-duration duration">1.582</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
@@ -510,9 +511,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -549,7 +550,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">Example02</span>, question: <span class="argument">Example02</span>, link: <span class="argument">Example02</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -572,9 +573,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-02</span></span>
   
-  <span class="lead-duration duration">0.854</span>
+  <span class="lead-duration duration">1.581</span>
 
 </div>
 
@@ -596,36 +597,36 @@ Respond{
         <div id="output-10" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;&quot;,
-			  &quot;answer&quot;: &quot;Example02&quot;,
-			  &quot;question&quot;: &quot;Example02&quot;,
-			  &quot;link&quot;: &quot;Example02&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='
+					, answer='Example02
+					, question='Example02
+					, link='Example02
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:22 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -840</p></pre>
+			elapsedTime=1560
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:17 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1560</p></pre>
         </div>
       </div>
       </div>
@@ -639,7 +640,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-02</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -659,8 +660,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-02 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -724,7 +725,7 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
   <span class="lead-duration duration">0.001</span>
 
@@ -761,7 +762,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.819</span>
+  <span class="lead-duration duration">1.592</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
@@ -796,9 +797,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.005</span>
 
           </div>
 
@@ -835,7 +836,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example03</span>, question: <span class="argument">Example03</span>, link: <span class="argument">Example03</span></span>
   
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -858,9 +859,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-03</span></span>
   
-  <span class="lead-duration duration">0.813</span>
+  <span class="lead-duration duration">1.580</span>
 
 </div>
 
@@ -882,36 +883,36 @@ Respond{
         <div id="output-16" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;mLu3Pmlujnzuo77eFVd3X4cmLUunRhm9yZ8Zpj4PMAmjIKAphNCVBUQlkKwu3AAV7m8uld67EeG2P8cDjO5AYRGzpzz2U5IZnCxLszpuh1rD0XNQJmTzXmUZecK0riAXCMgChs4Fcrdd6fPCZ22CFXU04oND1djIdbXWauijBkEkBZoVuAQhbmSqsQvwI0ekMwQFdzE4FR4r9MSamsleFPNEipxwtYPYohELWMWmjKNnGD0lfw5J4dgusY6qrUee1xdtYtDCmSi6oDJSPTrxFWRydhoeISLmCvJl24dfaNdOL&quot;,
-			  &quot;answer&quot;: &quot;Example03&quot;,
-			  &quot;question&quot;: &quot;Example03&quot;,
-			  &quot;link&quot;: &quot;Example03&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='6RwfxEl1h5faQnDCHNo4b8aIKMX19G4hYmTVAN0mcSXAZw7iDPBJh4Q818OvLqY5VogBXJgvQh9mXllzmdjn9oijTQ82EQGSfHMwzDdLxTNV1IyoX9zkVDGbsJKeQ08JY3q6Hf1rHv8NrxDGF0DpzeSo84feDbammGy4F4H24iqGG9WmhJfG9zinDsvr4JdzN0lA5p7xnRElxqgsJ86cauwJTkj3rhfLO9GPnWrIXT7nphmcT3Uf9XQE3MIKT7w0Ks8ShG9dijiFp1f6AMNzP6zXtmmwUGUkLy5bkMmwf3BFz
+					, answer='Example03
+					, question='Example03
+					, link='Example03
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:23 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -803</p></pre>
+			elapsedTime=1525
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:18 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1525</p></pre>
         </div>
       </div>
       </div>
@@ -925,9 +926,9 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-03</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -945,8 +946,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-03 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -1010,9 +1011,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -1047,7 +1048,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.910</span>
+  <span class="lead-duration duration">1.394</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
@@ -1082,9 +1083,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -1121,7 +1122,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">notSet</span>, question: <span class="argument">Example04</span>, link: <span class="argument">Example04</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1144,9 +1145,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-04</span></span>
   
-  <span class="lead-duration duration">0.908</span>
+  <span class="lead-duration duration">1.392</span>
 
 </div>
 
@@ -1168,34 +1169,36 @@ Respond{
         <div id="output-22" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;question&quot;: &quot;Example04&quot;,
-			  &quot;link&quot;: &quot;Example04&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='null
+					, answer='null
+					, question='Example04
+					, link='Example04
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:24 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -895</p></pre>
+			elapsedTime=1348
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:20 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1348</p></pre>
         </div>
       </div>
       </div>
@@ -1209,7 +1212,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-04</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1229,8 +1232,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-04 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -1294,7 +1297,7 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
   <span class="lead-duration duration">0.001</span>
 
@@ -1331,7 +1334,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.915</span>
+  <span class="lead-duration duration">1.507</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
@@ -1366,7 +1369,7 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
   <span class="lead-duration duration">0.002</span>
 
@@ -1405,7 +1408,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">nullValue</span>, question: <span class="argument">Example05</span>, link: <span class="argument">Example05</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1428,9 +1431,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-05</span></span>
   
-  <span class="lead-duration duration">0.912</span>
+  <span class="lead-duration duration">1.505</span>
 
 </div>
 
@@ -1452,36 +1455,36 @@ Respond{
         <div id="output-28" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;&quot;,
-			  &quot;answer&quot;: &quot;&quot;,
-			  &quot;question&quot;: &quot;Example05&quot;,
-			  &quot;link&quot;: &quot;Example05&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='
+					, answer='
+					, question='Example05
+					, link='Example05
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:25 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -907</p></pre>
+			elapsedTime=1477
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:21 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1477</p></pre>
         </div>
       </div>
       </div>
@@ -1495,9 +1498,9 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-05</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1515,8 +1518,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-05 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -1580,9 +1583,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
@@ -1617,7 +1620,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.896</span>
+  <span class="lead-duration duration">1.712</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
@@ -1652,9 +1655,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.008</span>
 
           </div>
 
@@ -1691,7 +1694,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">aboveUpperLimit</span>, question: <span class="argument">Example06</span>, link: <span class="argument">Example06</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1714,9 +1717,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-06</span></span>
   
-  <span class="lead-duration duration">0.893</span>
+  <span class="lead-duration duration">1.709</span>
 
 </div>
 
@@ -1738,36 +1741,36 @@ Respond{
         <div id="output-34" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;LmwuRefUCBTdiQ4yJFM4zGYzniR3phh9mpNtD4mMNIUbj6AoBiPB9mjSirjOour1zMJmAXAmtvYLtpqUdGrbZLoFqIf5SFvzuqJahBcrOrKzFcHqQBu6xng3GvIexEymfOlgKP2EVbEVaCds3BfreeIPh74WxrwFKR4446SJ6F5BDN2JvI4fUo0iNcFDFuX3o1zr1gFRFb896HFLNZSYWTSD1MfL7kYJib7zmhbGZjtDXqMvfblloQkPjy4jNz3xNy5xjAbcdmPEfoCxpKFJpM57cKyn4SUiSlIsMYWyNFXOa&quot;,
-			  &quot;answer&quot;: &quot;U4JjyUYHzAPQeUDa81leT0iECa9iLGGx5tcd8ZqjWnuYyKsy3RtHouMhxon2u97WN3KEqjvQd1lgBi9ZSN2yxBV352dxuRQ7M9zV1Wg4VsPhg8defFOLMSXlMsBsBU9pAHlztzPMeaHjTgoju4yufkN4BiVRjhcd3JX3sIn78LULhGFzB74g2oyTTiWJ7KB1B0jKfdGnmWxs0IKJcW5lhBEYGljxblJSuIhQuzQ5u72xROHKsXpZ91LGivI4HXCq&quot;,
-			  &quot;question&quot;: &quot;Example06&quot;,
-			  &quot;link&quot;: &quot;Example06&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='m0iv5lP2kXAps1Ku86oJKki6XTVXeuKA94zsI5S8IwnRljD1dLQ4IQdCAwjwAJlP4BXgGBcg0tOBZaxTLxoIVmX8ipAnA2w56zJl0RGaXIMpL8eKP3ydiRpsRFDNsvN4Mjnnw1xTRqWsFxBmKMp4cFvQOx9BuygbMO1ZHbd87ksFZBFcsqcAfASA84RzMSdX8VIHyW4tmH3mzFCfPCBl79V63KMMusliYZNLkCx4pKSMpotOIkatEJtaviWe9olMFI0Xisf0galW6pHGZadzkArZyIAojhKawC7JfJl8XWy9Q
+					, answer='NHkNf3pIyFgHQ1DApokXSV7HzKa4wRsLjFMugauu7JlBmmuMHsziq3mJDbrAlK8lqB6x6G9MeGN5ktEBC6XQkO7b3FQ5hdyGpH1H4o9D7lvdJbQ0Ztb13fRu787Bih8xT1ji4Sy1a6D7djjUVJUprMWnPfhWVmnNKKCtE1WwfKYUNkaoU6n4tYVVISJbuIzrYZEclkn91fLOv42OdaWJWKjwl9Lj0PqdOJjRdLxSgNfjBBCfPxx3hjvijB3p1F2X
+					, question='Example06
+					, link='Example06
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:26 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -885</p></pre>
+			elapsedTime=1645
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:23 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1645</p></pre>
         </div>
       </div>
       </div>
@@ -1781,7 +1784,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-06</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1801,8 +1804,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-06 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -1866,9 +1869,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -1903,7 +1906,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.907</span>
+  <span class="lead-duration duration">1.226</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-37">
@@ -1938,9 +1941,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.013</span>
 
           </div>
 
@@ -1977,7 +1980,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">Example07</span>, question: <span class="argument">notSet</span>, link: <span class="argument">Example07</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2000,9 +2003,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-07</span></span>
   
-  <span class="lead-duration duration">0.904</span>
+  <span class="lead-duration duration">1.225</span>
 
 </div>
 
@@ -2024,34 +2027,36 @@ Respond{
         <div id="output-40" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;answer&quot;: &quot;Example07&quot;,
-			  &quot;link&quot;: &quot;Example07&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='null
+					, answer='Example07
+					, question='null
+					, link='Example07
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:27 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -894</p></pre>
+			elapsedTime=1202
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:25 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1202</p></pre>
         </div>
       </div>
       </div>
@@ -2065,7 +2070,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-07</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2085,8 +2090,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-07 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -2150,7 +2155,7 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
   <span class="lead-duration duration">0.001</span>
 
@@ -2187,7 +2192,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.985</span>
+  <span class="lead-duration duration">0.933</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
@@ -2222,9 +2227,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.017</span>
 
           </div>
 
@@ -2261,7 +2266,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">Example08</span>, question: <span class="argument">nullValue</span>, link: <span class="argument">Example08</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2284,9 +2289,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-08</span></span>
   
-  <span class="lead-duration duration">0.981</span>
+  <span class="lead-duration duration">0.932</span>
 
 </div>
 
@@ -2308,36 +2313,36 @@ Respond{
         <div id="output-46" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;&quot;,
-			  &quot;answer&quot;: &quot;Example08&quot;,
-			  &quot;question&quot;: &quot;&quot;,
-			  &quot;link&quot;: &quot;Example08&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='
+					, answer='Example08
+					, question='
+					, link='Example08
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:28 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -977</p></pre>
+			elapsedTime=921
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:26 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 921</p></pre>
         </div>
       </div>
       </div>
@@ -2351,7 +2356,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-08</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2371,8 +2376,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-08 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -2436,7 +2441,7 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
   <span class="lead-duration duration">0.001</span>
 
@@ -2473,7 +2478,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">1.016</span>
+  <span class="lead-duration duration">0.952</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-49">
@@ -2508,9 +2513,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -2547,7 +2552,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example09</span>, question: <span class="argument">aboveUpperLimit</span>, link: <span class="argument">Example09</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2570,9 +2575,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-09</span></span>
   
-  <span class="lead-duration duration">1.013</span>
+  <span class="lead-duration duration">0.950</span>
 
 </div>
 
@@ -2594,36 +2599,36 @@ Respond{
         <div id="output-52" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;WaqsKba7ck47dcLdqoGqWxrzBD7uWgk2MquiH0sjljype5S5UJjUfQ0IO2nNC6W2ChYP17HU5mfXIoySq5LdDz85IKqMGlJZnjrUEtrOhnK1cZKSY1fniZ5mDc6jySJdQoIP7YcqnmOSjSNyIiEmOznoFxBJcXcDHwTn9zT63eIlNZf8tOgpiVUlo6bvLumqWjZpgUh4FyAs110KOAwcJf8wEgLsbM4zxSlfsqQtRUcPc7WD9VHpma8l93f3d2jeeC02IT14PvusKHtnZaIhDLFDjRlGt8waq1EPGFdwEY59V&quot;,
-			  &quot;answer&quot;: &quot;Example09&quot;,
-			  &quot;question&quot;: &quot;mahMAJL5rIv80IkImqMjZNbyWQhZ6WQBTz5KSRqjzssFYkBeVp1n4NzDu9xSQnDVndZo0oG3g6prE9yVBFCCYH9x9QnPwztGzCt4DjxQLdyNSEJciFUMBqoCXrfEIFqKWVWvnNHAPcGfKBRwNQrhIvDSnMe1Wl5Ejurv1IQjGh2X2MbBbDennFgluZQUwp2amBhKt3cj8MSquSBzxmHo0fk4mWDQ2yZUiGbah1mRoWhf6Wc0powBG9QZMT33kGIv&quot;,
-			  &quot;link&quot;: &quot;Example09&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='jGDUK4sfX3e2zEpkapBb8eJZZ7YpCqrvRg3hMt40wzUDm6IqxRxK1jjen1mJdxkZuQCYeQLrQelWW5klKvoQiy4GGNQGGfWKw9Mmqu9anReqKwrVb1tjhU3Njmdjjixd3SpzXLz48TSJQrFj4ovECuZDzeTjD66bUE9KjPN7CVTKx9IzNX5fXuhMTanvKjea0KwfL2cwkjrrnQr3SZG4LlyKE2141bgxB02gua4fheI9m8QD3ehkaQEBLpDQYQ5n8RZl8VKqVqoahmddvGZJo1p1D8REbJyisQtzS44Vja9U3
+					, answer='Example09
+					, question='pGBXCpUDbbjt8oC1C5Or5zANqJtr4ujhuWaZpouIzj4POYqFW5EQ8wJ9UrJIIOdqnLN1w5YdAcVLgTd76hOmRIiYt6FgG8RLY7Nd0O8rpff4hI9DyNg8IxfsmjT5ytcisNO7iUACyqQVF9mfvTutvLOsqVgD1IKEIfuf2nRWS23dvQoN0MVuVyBHDTPuyyzr45vgROKb2pz5fK0EYjm9De6waW2wBGDTXsRqtf4XNo6WRB3GS62Grw6e8ASkbKO9
+					, link='Example09
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:29 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -1002</p></pre>
+			elapsedTime=935
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:26 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 935</p></pre>
         </div>
       </div>
       </div>
@@ -2637,7 +2642,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-09</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2657,8 +2662,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-09 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -2722,9 +2727,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2759,7 +2764,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.889</span>
+  <span class="lead-duration duration">0.944</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-55">
@@ -2794,9 +2799,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -2833,7 +2838,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">Example10</span>, question: <span class="argument">Example10</span>, link: <span class="argument">notSet</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2856,9 +2861,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-10</span></span>
   
-  <span class="lead-duration duration">0.887</span>
+  <span class="lead-duration duration">0.942</span>
 
 </div>
 
@@ -2880,34 +2885,36 @@ Respond{
         <div id="output-58" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;answer&quot;: &quot;Example10&quot;,
-			  &quot;question&quot;: &quot;Example10&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='null
+					, answer='Example10
+					, question='Example10
+					, link='null
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:30 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -885</p></pre>
+			elapsedTime=933
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:27 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 933</p></pre>
         </div>
       </div>
       </div>
@@ -2921,7 +2928,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-10</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2941,8 +2948,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-10 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -3006,9 +3013,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -3043,7 +3050,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.824</span>
+  <span class="lead-duration duration">1.639</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-61">
@@ -3078,9 +3085,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -3117,7 +3124,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">Example11</span>, question: <span class="argument">Example11</span>, link: <span class="argument">nullValue</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3140,9 +3147,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-11</span></span>
   
-  <span class="lead-duration duration">0.818</span>
+  <span class="lead-duration duration">1.638</span>
 
 </div>
 
@@ -3164,36 +3171,36 @@ Respond{
         <div id="output-64" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;&quot;,
-			  &quot;answer&quot;: &quot;Example11&quot;,
-			  &quot;question&quot;: &quot;Example11&quot;,
-			  &quot;link&quot;: &quot;&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='
+					, answer='Example11
+					, question='Example11
+					, link='
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:30 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -810</p></pre>
+			elapsedTime=1604
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:29 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1604</p></pre>
         </div>
       </div>
       </div>
@@ -3207,9 +3214,9 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-11</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3227,8 +3234,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-11 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -3292,7 +3299,7 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
   <span class="lead-duration duration">0.001</span>
 
@@ -3329,7 +3336,7 @@ Respond{
       </div>
 
   
-  <span class="lead-duration duration">0.790</span>
+  <span class="lead-duration duration">1.427</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-67">
@@ -3364,9 +3371,9 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">TestEnvironment.setUp(Scenario)</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -3403,7 +3410,7 @@ Respond{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example12</span>, question: <span class="argument">Example12</span>, link: <span class="argument">aboveUpperLimit</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3426,9 +3433,9 @@ Respond{
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ</span>
+  <span class="name">Try to create the new FAQ <span class="argument">requestId-12</span></span>
   
-  <span class="lead-duration duration">0.787</span>
+  <span class="lead-duration duration">1.426</span>
 
 </div>
 
@@ -3450,36 +3457,36 @@ Respond{
         <div id="output-70" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;2QI6CfytTHXxm22Uw7lZ3HxRBDkicLVmPmSrFVXjR4gf2BiqF2dQCbZsIPvvEQtTIZ3J3XuJpRJ9WsHU2NnCfZoYorputRNbpBUBKCDQMjf7z5Pwu1bA8cZpcT4P1Wj1nP2lZ27UKg9T4UBN0uJA8VkkPRul48TxeVCJ5YE37nIH4cuP7iM4JvtBFStaI7yKIFui13JDmIvpwkRd4v9SixxvpH0SJ83DCm5fBlQ0SkwLfUpMRWmzGe1Qyj0JGD8afvrnIVGbdXyWMHxMlIyqffOdNBIXlEVJ7vE7cGsuoSsM7&quot;,
-			  &quot;answer&quot;: &quot;Example12&quot;,
-			  &quot;question&quot;: &quot;Example12&quot;,
-			  &quot;link&quot;: &quot;wgeB2ICr568DWwr5KY60aQuaFoB8uFDu4DTYIaiB8iocuXLo19UoBKCUbQiwYxvMuTmyEmGtQTCbGGa6gFnHFM7UWCT4YPsJs52UTznY6zOl9yJhkNB7tNPX3wA9v3Ovoob9CWuHzLF8jPv6HjnP7T8Eu0mUkEq2G1uVyirf4GnKwuSj1NwujIAeRJAXUs1Bvzh9okjd4fPSIcWbE7yPTvvezPjVYGRAI4daW4tAQAImDuPVkKr7KFy5vPJJjAIU9GUdkIB1FB6yzKQhi70cCuCNH8UyPZbK6HSAAx6aucI6l&quot;
-			},
-		multipartTextBody=,
-		files=null
+		Requested{
+			url='/v1/faqs,
+			headers=,
+			body='{
+					code='wwbqL7Ub7nOSl2WCtGRZ75a0OhPEkBhoZFUX3enkx7YON52cMniNBBZWcE0Rv7u3s7yeeUwcr9bjMhVwWZBjkcbAkTB5YkVDrThDyGmEg6Tnp50FixOGlKR2tpxBqRweUjRiXUxEaFWlRslUOFZwZlZI1Z5uqFwBstIUHLXLMS9Fvl7QGJpzXmhtGtkEqbLMuJP93WPSyw54K5Ml1AzQgCh5C9rLlheZinnIB7laqAJ3ZpcEFs2FUdhgCbYfh0Bfqfqq9DLMFcSK43mNwQYEpsLREQSUATOaQQQbXd4Zqp5kF
+					, answer='Example12
+					, question='Example12
+					, link='yLEwpaOMI1Ll5hvJD9SSYZi9xyEaG6G3L9pK0BWJtWYdJvcnBooet00JEtBAWp66MsGX5rKELpAef3UzGNjoZVntQSx24d9xFvB3i7FjZFAe9Wbl0eZJro1wqSNPyY7BT5GiKbv3oTsqtF5lc0cKYVHgWOlFfOJ0LYVTHT3HBnGJDga1ezYvcCvavkhrbPHIHbWH1SLqD6vVuCOWQSFAhCnPJBTmHmrZG9QmbBSAaHTRdzD9DaOGmM8cH49jqoczk9Np5yXH35vnDfA4M12c8lbTQtzwLR2nola6CdzpopawH
+				},
+		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
-Respond{
+	Respond{
+			methodType=application/json
 			requestHttpCode=200
-			headers=[Date: Wed,
-				 17 Jul 2019 13:40:31 GMT,
-				 Content-Type: text/plain,
-				 Transfer-Encoding: chunked,
-				 Connection: keep-alive,
-				 access-control-allow-origin: *,
-				 Vary: Accept-Encoding],
-			bodyContent='{&quot;id&quot;:&quot;validIdValue&quot;,
-							  &quot;code&quot;: &quot;validCodeValue&quot;,
-							  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-							  &quot;question&quot;: &quot;validQuestionValue&quot;,
-							  &quot;link&quot;: &quot;validLinkValue&quot;
-							}
-			}</p><p>POST -- ElapsedTime: -782</p></pre>
+			elapsedTime=1409
+			headers=
+				Date=Mon, 22 Jul 2019 15:08:30 GMT
+				Content-Type=application/json
+				Transfer-Encoding=chunked
+				Connection=keep-alive
+				Access-Control-Allow-Origin=*
+				Vary=Accept-Encoding
+			bodyContent='{
+			    &quot;id&quot;: &quot;validIdValue&quot;,
+			    &quot;code&quot;: &quot;validCodeValue&quot;,
+			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
+			    &quot;question&quot;: &quot;validQuestionValue&quot;,
+			    &quot;link&quot;: &quot;validLinkValue&quot;
+			}
+		}</p><p>POST -- ElapsedTime: 1409</p></pre>
         </div>
       </div>
       </div>
@@ -3493,7 +3500,7 @@ Respond{
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">10000</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-12</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -3513,8 +3520,8 @@ Respond{
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:45)
-	at &#10045;.The Http 503 API code will be received in less than 10000 milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:20)
+	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
+	at &#10045;.The requestId-12 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
 </pre>
       </div>
     </div>
@@ -3578,7 +3585,7 @@ Respond{
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">TestEnvironment.tearDown(Scenario)</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
   <span class="lead-duration duration">0.001</span>
 

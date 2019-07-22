@@ -1,0 +1,1778 @@
+[
+  {
+    "line": 13,
+    "elements": [
+      {
+        "start_timestamp": "2019-07-22T15:08:12.582Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2549683,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without code",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1248871,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1904413,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: notSet, answer: Example01, question: Example01, link: Example01",
+            "match": {
+              "arguments": [
+                {
+                  "val": "notSet",
+                  "offset": 34
+                },
+                {
+                  "val": "Example01",
+                  "offset": 50
+                },
+                {
+                  "val": "Example01",
+                  "offset": 71
+                },
+                {
+                  "val": "Example01",
+                  "offset": 88
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027null\n\t\t\t\t\t, answer\u003d\u0027Example01\n\t\t\t\t\t, question\u003d\u0027Example01\n\t\t\t\t\t, link\u003d\u0027Example01\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d2475\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:15 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 2475"
+            ],
+            "result": {
+              "duration": 3291865750,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-01",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-01",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2065963,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The requestId-01 Http 200 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-01",
+                  "offset": 4
+                },
+                {
+                  "val": "200",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad The API response Code - Received: 0 \u0026 Expected: 401 expected:\u003c401\u003e but was:\u003c0\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:118)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_message_will_be(ApiCommonValidations.java:101)\n\tat ✽.The api message error code will be 401(file:src/test/resources/features/FAQs/CreateFQAs.feature:22)\n",
+              "duration": 2339601,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:15.934Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2695488,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null code",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1488817,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 284775,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: nullValue, answer: Example02, question: Example02, link: Example02",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nullValue",
+                  "offset": 34
+                },
+                {
+                  "val": "Example02",
+                  "offset": 53
+                },
+                {
+                  "val": "Example02",
+                  "offset": 74
+                },
+                {
+                  "val": "Example02",
+                  "offset": 91
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027\n\t\t\t\t\t, answer\u003d\u0027Example02\n\t\t\t\t\t, question\u003d\u0027Example02\n\t\t\t\t\t, link\u003d\u0027Example02\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1560\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:17 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1560"
+            ],
+            "result": {
+              "duration": 1581266157,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-02",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-02",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-02 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 859793,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-02 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-02",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 75285,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:17.558Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5571546,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1603601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10418540,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: aboveUpperLimit, answer: Example03, question: Example03, link: Example03",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aboveUpperLimit",
+                  "offset": 34
+                },
+                {
+                  "val": "Example03",
+                  "offset": 59
+                },
+                {
+                  "val": "Example03",
+                  "offset": 80
+                },
+                {
+                  "val": "Example03",
+                  "offset": 97
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u00276RwfxEl1h5faQnDCHNo4b8aIKMX19G4hYmTVAN0mcSXAZw7iDPBJh4Q818OvLqY5VogBXJgvQh9mXllzmdjn9oijTQ82EQGSfHMwzDdLxTNV1IyoX9zkVDGbsJKeQ08JY3q6Hf1rHv8NrxDGF0DpzeSo84feDbammGy4F4H24iqGG9WmhJfG9zinDsvr4JdzN0lA5p7xnRElxqgsJ86cauwJTkj3rhfLO9GPnWrIXT7nphmcT3Uf9XQE3MIKT7w0Ks8ShG9dijiFp1f6AMNzP6zXtmmwUGUkLy5bkMmwf3BFz\n\t\t\t\t\t, answer\u003d\u0027Example03\n\t\t\t\t\t, question\u003d\u0027Example03\n\t\t\t\t\t, link\u003d\u0027Example03\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1525\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:18 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1525"
+            ],
+            "result": {
+              "duration": 1580167228,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-03",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-03",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-03 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 1684681,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-03 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-03",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59401,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:19.192Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3800235,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without answer",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1419568,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 455695,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: notSet, answer: notSet, question: Example04, link: Example04",
+            "match": {
+              "arguments": [
+                {
+                  "val": "notSet",
+                  "offset": 34
+                },
+                {
+                  "val": "notSet",
+                  "offset": 50
+                },
+                {
+                  "val": "Example04",
+                  "offset": 68
+                },
+                {
+                  "val": "Example04",
+                  "offset": 85
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027null\n\t\t\t\t\t, answer\u003d\u0027null\n\t\t\t\t\t, question\u003d\u0027Example04\n\t\t\t\t\t, link\u003d\u0027Example04\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1348\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:20 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1348"
+            ],
+            "result": {
+              "duration": 1392626040,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-04",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-04",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-04 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 899085,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-04 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-04",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54981,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:20.613Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2496765,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null answer",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 6509499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 422691,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: nullValue, answer: nullValue, question: Example05, link: Example05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nullValue",
+                  "offset": 34
+                },
+                {
+                  "val": "nullValue",
+                  "offset": 53
+                },
+                {
+                  "val": "Example05",
+                  "offset": 74
+                },
+                {
+                  "val": "Example05",
+                  "offset": 91
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027\n\t\t\t\t\t, answer\u003d\u0027\n\t\t\t\t\t, question\u003d\u0027Example05\n\t\t\t\t\t, link\u003d\u0027Example05\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1477\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:21 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1477"
+            ],
+            "result": {
+              "duration": 1505674354,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-05",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-05",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-05 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 1006464,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-05 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-05",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 75234,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:22.151Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8838183,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 1289867,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1952155,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: aboveUpperLimit, answer: aboveUpperLimit, question: Example06, link: Example06",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aboveUpperLimit",
+                  "offset": 34
+                },
+                {
+                  "val": "aboveUpperLimit",
+                  "offset": 59
+                },
+                {
+                  "val": "Example06",
+                  "offset": 86
+                },
+                {
+                  "val": "Example06",
+                  "offset": 103
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027m0iv5lP2kXAps1Ku86oJKki6XTVXeuKA94zsI5S8IwnRljD1dLQ4IQdCAwjwAJlP4BXgGBcg0tOBZaxTLxoIVmX8ipAnA2w56zJl0RGaXIMpL8eKP3ydiRpsRFDNsvN4Mjnnw1xTRqWsFxBmKMp4cFvQOx9BuygbMO1ZHbd87ksFZBFcsqcAfASA84RzMSdX8VIHyW4tmH3mzFCfPCBl79V63KMMusliYZNLkCx4pKSMpotOIkatEJtaviWe9olMFI0Xisf0galW6pHGZadzkArZyIAojhKawC7JfJl8XWy9Q\n\t\t\t\t\t, answer\u003d\u0027NHkNf3pIyFgHQ1DApokXSV7HzKa4wRsLjFMugauu7JlBmmuMHsziq3mJDbrAlK8lqB6x6G9MeGN5ktEBC6XQkO7b3FQ5hdyGpH1H4o9D7lvdJbQ0Ztb13fRu787Bih8xT1ji4Sy1a6D7djjUVJUprMWnPfhWVmnNKKCtE1WwfKYUNkaoU6n4tYVVISJbuIzrYZEclkn91fLOv42OdaWJWKjwl9Lj0PqdOJjRdLxSgNfjBBCfPxx3hjvijB3p1F2X\n\t\t\t\t\t, question\u003d\u0027Example06\n\t\t\t\t\t, link\u003d\u0027Example06\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1645\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:23 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1645"
+            ],
+            "result": {
+              "duration": 1709313312,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-06",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-06",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-06 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 966267,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-06 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-06",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 189955,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:23.893Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13028229,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without question",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 1071872,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 593623,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: notSet, answer: Example07, question: notSet, link: Example07",
+            "match": {
+              "arguments": [
+                {
+                  "val": "notSet",
+                  "offset": 34
+                },
+                {
+                  "val": "Example07",
+                  "offset": 50
+                },
+                {
+                  "val": "notSet",
+                  "offset": 71
+                },
+                {
+                  "val": "Example07",
+                  "offset": 85
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027null\n\t\t\t\t\t, answer\u003d\u0027Example07\n\t\t\t\t\t, question\u003d\u0027null\n\t\t\t\t\t, link\u003d\u0027Example07\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1202\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:25 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1202"
+            ],
+            "result": {
+              "duration": 1225465691,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-07",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-07",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-07 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 748482,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-07 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-07",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47589,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:25.153Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17224816,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null question",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 1145563,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 295962,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: nullValue, answer: Example08, question: nullValue, link: Example08",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nullValue",
+                  "offset": 34
+                },
+                {
+                  "val": "Example08",
+                  "offset": 53
+                },
+                {
+                  "val": "nullValue",
+                  "offset": 74
+                },
+                {
+                  "val": "Example08",
+                  "offset": 91
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027\n\t\t\t\t\t, answer\u003d\u0027Example08\n\t\t\t\t\t, question\u003d\u0027\n\t\t\t\t\t, link\u003d\u0027Example08\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d921\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:26 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 921"
+            ],
+            "result": {
+              "duration": 932886564,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-08",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-08",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-08 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 743552,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-08 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-08",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57345,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:26.119Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2183111,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 959473,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 852495,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: aboveUpperLimit, answer: Example09, question: aboveUpperLimit, link: Example09",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aboveUpperLimit",
+                  "offset": 34
+                },
+                {
+                  "val": "Example09",
+                  "offset": 59
+                },
+                {
+                  "val": "aboveUpperLimit",
+                  "offset": 80
+                },
+                {
+                  "val": "Example09",
+                  "offset": 103
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027jGDUK4sfX3e2zEpkapBb8eJZZ7YpCqrvRg3hMt40wzUDm6IqxRxK1jjen1mJdxkZuQCYeQLrQelWW5klKvoQiy4GGNQGGfWKw9Mmqu9anReqKwrVb1tjhU3Njmdjjixd3SpzXLz48TSJQrFj4ovECuZDzeTjD66bUE9KjPN7CVTKx9IzNX5fXuhMTanvKjea0KwfL2cwkjrrnQr3SZG4LlyKE2141bgxB02gua4fheI9m8QD3ehkaQEBLpDQYQ5n8RZl8VKqVqoahmddvGZJo1p1D8REbJyisQtzS44Vja9U3\n\t\t\t\t\t, answer\u003d\u0027Example09\n\t\t\t\t\t, question\u003d\u0027pGBXCpUDbbjt8oC1C5Or5zANqJtr4ujhuWaZpouIzj4POYqFW5EQ8wJ9UrJIIOdqnLN1w5YdAcVLgTd76hOmRIiYt6FgG8RLY7Nd0O8rpff4hI9DyNg8IxfsmjT5ytcisNO7iUACyqQVF9mfvTutvLOsqVgD1IKEIfuf2nRWS23dvQoN0MVuVyBHDTPuyyzr45vgROKb2pz5fK0EYjm9De6waW2wBGDTXsRqtf4XNo6WRB3GS62Grw6e8ASkbKO9\n\t\t\t\t\t, link\u003d\u0027Example09\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d935\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:26 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 935"
+            ],
+            "result": {
+              "duration": 950689825,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-09",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-09",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-09 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 754323,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-09 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-09",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51853,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:27.092Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1225419,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without link",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;11",
+        "after": [
+          {
+            "result": {
+              "duration": 1306681,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 309455,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: notSet, answer: Example10, question: Example10, link: notSet",
+            "match": {
+              "arguments": [
+                {
+                  "val": "notSet",
+                  "offset": 34
+                },
+                {
+                  "val": "Example10",
+                  "offset": 50
+                },
+                {
+                  "val": "Example10",
+                  "offset": 71
+                },
+                {
+                  "val": "notSet",
+                  "offset": 88
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027null\n\t\t\t\t\t, answer\u003d\u0027Example10\n\t\t\t\t\t, question\u003d\u0027Example10\n\t\t\t\t\t, link\u003d\u0027null\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d933\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:27 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 933"
+            ],
+            "result": {
+              "duration": 942926718,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-10",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-10 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 939710,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-10 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-10",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62065,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:28.048Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2081070,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null link",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;12",
+        "after": [
+          {
+            "result": {
+              "duration": 1042303,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 528593,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: nullValue, answer: Example11, question: Example11, link: nullValue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nullValue",
+                  "offset": 34
+                },
+                {
+                  "val": "Example11",
+                  "offset": 53
+                },
+                {
+                  "val": "Example11",
+                  "offset": 74
+                },
+                {
+                  "val": "nullValue",
+                  "offset": 91
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027\n\t\t\t\t\t, answer\u003d\u0027Example11\n\t\t\t\t\t, question\u003d\u0027Example11\n\t\t\t\t\t, link\u003d\u0027\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1604\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:29 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1604"
+            ],
+            "result": {
+              "duration": 1638454839,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-11",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-11 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 880477,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-11 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-11",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44314,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-22T15:08:29.705Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2650066,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link",
+        "description": "",
+        "id": "fqas-manager---createfqas-resource---validation;unsuccessful-create-a-faq-when-the-faq-from-have:-\u003cobjectoftest\u003e;;13",
+        "after": [
+          {
+            "result": {
+              "duration": 1189483,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioContext.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 493945,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The FAQ from with the data: code: aboveUpperLimit, answer: Example12, question: Example12, link: aboveUpperLimit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aboveUpperLimit",
+                  "offset": 34
+                },
+                {
+                  "val": "Example12",
+                  "offset": 59
+                },
+                {
+                  "val": "Example12",
+                  "offset": 80
+                },
+                {
+                  "val": "aboveUpperLimit",
+                  "offset": 97
+                }
+              ],
+              "location": "FAQsSteps.faqFromData(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "POST ----- Executed: - \n\t\tRequested{\n\t\t\turl\u003d\u0027/v1/faqs,\n\t\t\theaders\u003d,\n\t\t\tbody\u003d\u0027{\n\t\t\t\t\tcode\u003d\u0027wwbqL7Ub7nOSl2WCtGRZ75a0OhPEkBhoZFUX3enkx7YON52cMniNBBZWcE0Rv7u3s7yeeUwcr9bjMhVwWZBjkcbAkTB5YkVDrThDyGmEg6Tnp50FixOGlKR2tpxBqRweUjRiXUxEaFWlRslUOFZwZlZI1Z5uqFwBstIUHLXLMS9Fvl7QGJpzXmhtGtkEqbLMuJP93WPSyw54K5Ml1AzQgCh5C9rLlheZinnIB7laqAJ3ZpcEFs2FUdhgCbYfh0Bfqfqq9DLMFcSK43mNwQYEpsLREQSUATOaQQQbXd4Zqp5kF\n\t\t\t\t\t, answer\u003d\u0027Example12\n\t\t\t\t\t, question\u003d\u0027Example12\n\t\t\t\t\t, link\u003d\u0027yLEwpaOMI1Ll5hvJD9SSYZi9xyEaG6G3L9pK0BWJtWYdJvcnBooet00JEtBAWp66MsGX5rKELpAef3UzGNjoZVntQSx24d9xFvB3i7FjZFAe9Wbl0eZJro1wqSNPyY7BT5GiKbv3oTsqtF5lc0cKYVHgWOlFfOJ0LYVTHT3HBnGJDga1ezYvcCvavkhrbPHIHbWH1SLqD6vVuCOWQSFAhCnPJBTmHmrZG9QmbBSAaHTRdzD9DaOGmM8cH49jqoczk9Np5yXH35vnDfA4M12c8lbTQtzwLR2nola6CdzpopawH\n\t\t\t\t},\n\t\tmultipartTextBody\u003d\n\t\t}",
+              "POST -----  Respond: - \n\tRespond{\n\t\t\tmethodType\u003dapplication/json\n\t\t\trequestHttpCode\u003d200\n\t\t\telapsedTime\u003d1409\n\t\t\theaders\u003d\n\t\t\t\tDate\u003dMon, 22 Jul 2019 15:08:30 GMT\n\t\t\t\tContent-Type\u003dapplication/json\n\t\t\t\tTransfer-Encoding\u003dchunked\n\t\t\t\tConnection\u003dkeep-alive\n\t\t\t\tAccess-Control-Allow-Origin\u003d*\n\t\t\t\tVary\u003dAccept-Encoding\n\t\t\tbodyContent\u003d\u0027{\n\t\t\t    \"id\": \"validIdValue\",\n\t\t\t    \"code\": \"validCodeValue\",\n\t\t\t    \"answer\": \"validAnswerValue\",\n\t\t\t    \"question\": \"validQuestionValue\",\n\t\t\t    \"link\": \"validLinkValue\"\n\t\t\t}\n\t\t}",
+              "POST -- ElapsedTime: 1409"
+            ],
+            "result": {
+              "duration": 1426122374,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Try to create the new FAQ requestId-12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-12",
+                  "offset": 26
+                }
+              ],
+              "location": "FAQsSteps.try_to_create_the_new_faq(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError:  Bad Http Code - Received: 200 \u0026 Expected: 503 expected:\u003c503\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)\n\tat ✽.The requestId-12 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)\n",
+              "duration": 973377,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "The requestId-12 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "requestId-12",
+                  "offset": 4
+                },
+                {
+                  "val": "503",
+                  "offset": 22
+                },
+                {
+                  "val": "envMaxTimeoutForRespond",
+                  "offset": 65
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_response_is(String,int,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69117,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The api message error code will be 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiCommonValidations.the_api_message_will_be(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@FQAs"
+          },
+          {
+            "name": "@CreateFQAs"
+          },
+          {
+            "name": "@CreateFQAsRestriction"
+          }
+        ]
+      }
+    ],
+    "name": "FQAs Manager - CreateFQAs Resource - Validation",
+    "description": "",
+    "id": "fqas-manager---createfqas-resource---validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FAQs/CreateFQAs.feature",
+    "tags": [
+      {
+        "name": "@SmokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@FQAs",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@CreateFQAs",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

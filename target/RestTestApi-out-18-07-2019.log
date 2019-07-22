@@ -1,0 +1,2535 @@
+2019-07-18 07:55:42 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 07:55:42 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 07:55:42 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 07:55:42 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:42 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 07:55:42 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "answer": "Example01",
+  "question": "Example01",
+  "link": "Example01"
+}
+2019-07-18 07:55:43 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:43 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:43 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:43 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:43 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:43 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 07:55:43 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "Example02",
+  "question": "Example02",
+  "link": "Example02"
+}
+2019-07-18 07:55:44 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:44 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:44 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:44 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:44 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:44 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 07:55:44 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "VhlcRNlkfzobIyHttgCxMO7sFGkhLVbHvkXarStxVzS2Ri71nRwcFzVYsqsZoE0MAFHBbLh1HUTZUhlZHDOauevtYzPqpCmPanw7QYpnDZbiHK8IO4RC0xryJhUggu05LUD8zGhEifwKULkcffEpHvvxcykBlA5mbVfeMkcAAh9xLqlpDgaqhjW3A9iffDpeOUzyZlOuXlLDg96xfBqJqJqPrOrSdReDWy68Z8EqqYeyv6XsrfGVDr5YxCApTmCzm8ncUJYBgvUl8QrnV90LWghyLQPHZf6cTTbl56bQgc1RT",
+  "answer": "Example03",
+  "question": "Example03",
+  "link": "Example03"
+}
+2019-07-18 07:55:45 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:45 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:45 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:45 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:45 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:45 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 07:55:45 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "question": "Example04",
+  "link": "Example04"
+}
+2019-07-18 07:55:46 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:46 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:46 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:46 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:46 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:46 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 07:55:46 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "",
+  "question": "Example05",
+  "link": "Example05"
+}
+2019-07-18 07:55:47 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:47 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:47 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:47 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:47 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:47 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 07:55:47 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "JJpp1NIMcPWTonlUOqMmqWoAM6MKgHCH6TpAqkFP36sfny44EubJz5L30vdZYtgqLg4aD8vC5A8Z2igQZmS8YRVfwVqLzQ67OfrbBoQGoAg5aoR0vrcG7q8dYKYCpZzsXxNqljQbbmsFpA2OqcqKn5nEoUaUd5H2pu3vLFNmRD5p0C9Rdp4x9vxLNShAlyLfwwbSK2NuTTsLy5ozqy9rw7GoPWAikuVgC2xcoWlI0WjqGyWREfdKwjPwiT0yQc8NEcKppRPh5Jfbf25PIOkDLHi0GqCStjE5qcWTpSrHBTdUs",
+  "answer": "cj5ZyylHGKxQFm3unMAHHPVoXf5FZdeTTQQ1lQmbf80KcTOXIeitE7bLK1OyAIl5uKIyXR2H5mlRFiEmDvJvwlBXgKzQBSTeCrWlg4yz3PILTPZsFKVXKy194b2awCrXWJyJxNdUU938wSZSb3lFzZr1U3dg1YuxY5ey2Hb9ponkm1SeBAQgRJFZve9w2BMDA9EwsjIRskxDKrcxEn5lO76OSMxXYR5tmn4YkStMiiQKVmLmUOw27VGwgM7d8N0s",
+  "question": "Example06",
+  "link": "Example06"
+}
+2019-07-18 07:55:48 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:48 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:48 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:48 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:48 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:48 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 07:55:48 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "answer": "Example07",
+  "link": "Example07"
+}
+2019-07-18 07:55:49 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:49 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:49 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:49 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:49 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:49 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 07:55:49 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "Example08",
+  "question": "",
+  "link": "Example08"
+}
+2019-07-18 07:55:50 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:50 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:50 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:50 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:50 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:50 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 07:55:50 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "lFSFB15HlNVWSoQbaZVK1EgKJwyw3mnfke4ZEz3zGW0TcAIFvNJGu4oTZMJWLX00PD3nNCFUiGUksIHzEAghllKvcs9cRqxuMSnEqZRpU0PIdaZDf8Rg7Ho9fXL02mCnBWXNsINTsqpIumJQf3cbKGMAVPp3u9EZSjRIPZNwMv2HmMMRATYWRaaXwnGZMTtYfHQicZy5Q8vrnZwPJySTe3LoDVzdTnVVl2gDD01n1Besdkr8YRdPaKPJ4lK2vS2pNep5r1SdsVrB5BCNnshfetFl503quxoBaNVcHPV0Jeu0T",
+  "answer": "Example09",
+  "question": "482CwPk4nQkWyNZT4fJ3q48OT4OISHLQ6IA6kncAL0rmUGiEb2V1yUut85uAkQe0MjKYUV85nrx54bcyyUw5zzniSsr732NjGZXGKOl7yD63V3mdo6g9u3AyAjUubiUiqzjVvWUyFIYKAWv24dyZilE4tBdtBZL1ZLEW1uLYRs9bLiht2G5ErqDZPWqBribE1NSl0HozoH2Mw28DHMKNAc34C7MwkLeuQWFJpr4agF6RP4W2zPlJ07vavP8bLCaT",
+  "link": "Example09"
+}
+2019-07-18 07:55:51 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:51 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:51 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:51 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:51 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:51 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 07:55:51 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "answer": "Example10",
+  "question": "Example10"
+}
+2019-07-18 07:55:52 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:52 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:52 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:52 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:52 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:52 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 07:55:52 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "Example11",
+  "question": "Example11",
+  "link": ""
+}
+2019-07-18 07:55:53 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:53 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:53 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:53 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:53 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:55:53 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 07:55:53 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "twfRockB1PAS1S61OHDaOhF7olvqtv8yXvC7shHRxvgfh1A1mA9H34gE1UZuHaUpibnXetlSfzo2x0bq5NRI9r9MbbjiFp4C3aCrFCk6OVfYKdffHIf6fXoJMjHQNoR4YYmhftceehvdBs1x5vY5kUOwNWHMVARkYwmkkTajGdLthQvoiPyrodRZJU3bEOSQBmjlj7FYlotp7s3dy2kcsxapgmCEHV4Rbze4VtQkpThXzwyi3QEOgMsf2AOH4o65yIvyqnNE7JXcGoEdWibCNyJPovTHTOZW9YecWZ9QNupbB",
+  "answer": "Example12",
+  "question": "Example12",
+  "link": "Mkj6jY4weEZ7gCRwll0laZF3ymAuGlYwfWNN70qnOiPj8JrfKk5CUwXzv3ykY1HSfIDnZCRP7AVOEtAs2Mqh9Iov16wjHlPGdDoFpksF8DNMpP7uDnY8b7G1Q8y3gdPfua374rcjNA6c4oosNcQRAFtr1KuDlW1lhPqCrJcHPwNCpRSbZ0vS3r0g5pzWND2FpPm3KyIH24iwfWo5SxDEv3MtZYwSiu4JRcYsrbwW6frPjWk4WChRu2f41YtqOWfq3tkaJtYxBDAwA2HkOOIgRpMm8g6p6E5CrYJyGKxEr1pm2"
+}
+2019-07-18 07:55:53 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:55:53 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:55:53 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:55:53 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:55:54 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 07:55:55 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 07:57:28 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 07:57:28 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 07:57:28 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 07:57:28 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:28 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 07:57:29 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:30 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:30 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "answer": "Example01",
+  "question": "Example01",
+  "link": "Example01"
+}
+2019-07-18 07:57:30 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:30 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:30 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:30 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:30 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:30 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 07:57:30 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:31 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:31 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "Example02",
+  "question": "Example02",
+  "link": "Example02"
+}
+2019-07-18 07:57:31 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:31 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:31 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:31 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:31 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:31 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 07:57:31 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:32 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:32 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "TTNimdkk1kW8OTu8K2icMtb8R37gI4f8fE2hYxoLFdxSXTurnQ9lXBoVFtcPVREv4sDlFgAFCIw1q9cwU0GR4Rdvlg7j5Po0xm79WuUcUJYp3GU9uqxtNDxMPjoMT37YCd6JeerSBvTkXTCtV0l8UyemjRfkrUXJyZKmrbZ3mzZUlHzTJk4P3uBuGbloceiOVgtRNLtznQX8TVbI0WHmvaqPPq40ILYz5FlyMbnDz88oN7IFJhfKksqln4YmS4opNzAeIEFWrx1roBwkHAFCxvS7ZOqLrI8SC0FXUbhn0qttl",
+  "answer": "Example03",
+  "question": "Example03",
+  "link": "Example03"
+}
+2019-07-18 07:57:32 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:32 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:32 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:32 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:32 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:32 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 07:57:32 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:33 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:33 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "question": "Example04",
+  "link": "Example04"
+}
+2019-07-18 07:57:34 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:33 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:34 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:34 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:34 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:34 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 07:57:34 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:34 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "",
+  "question": "Example05",
+  "link": "Example05"
+}
+2019-07-18 07:57:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:35 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:35 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:35 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:35 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 07:57:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:36 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:36 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "kFG1dK5yUdjsKPBO8QrbMRBV5HdHSXtDUZm1vYcXkLE7KBet1NOjrPRzeA1zT8xnfuAW6FCbsPGRUI6gfuankGkaGGBIOrsIoGNwvY8yVysZ8cHOfme0RE5XXQwscvHuQOV4kmdMODgDfHKWrColIw6XyEOzmAx7ezPXXHkJYpQglZDhUrrjTkgz3feHufsRN3Hn4igNVbXRWprn4eFu34JB0tRfLe9LS0XTLWDHzfvXLeiPYXwAsM3nTrE7YsWxStFan3e8YmvwCjCtltE7nsVEY7LiZCxVeu9w93RKyA2Oj",
+  "answer": "gUwnpM07JaOf8vsGwLISji63hfRMsu9nbDzYeilVyaArnnEApOPwwzGAQL6i1TO4nV9K1bYHUBVBTDSxFMhJEV5JvpRp6WJQZlPaBL7e1Btl5VSSzvR2mbUMMQBQ0YirWovnJEBgQkRrp7F3W40LEUccklgk8fC3g5ZiJNgCqiRTKX4tano5U9D0f7Zobt29KnbOWFAtaY7kFqTJITGtUIxW0Xu3VnvfrOxtcRfP1LhU3Q07l7PXsmtnIbDyWeya",
+  "question": "Example06",
+  "link": "Example06"
+}
+2019-07-18 07:57:36 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:36 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:36 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:36 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:36 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:36 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 07:57:36 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:37 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:37 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "answer": "Example07",
+  "link": "Example07"
+}
+2019-07-18 07:57:37 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:37 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:37 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:37 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:37 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:37 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 07:57:37 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:38 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:38 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "Example08",
+  "question": "",
+  "link": "Example08"
+}
+2019-07-18 07:57:38 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:38 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:38 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:38 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:38 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:38 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 07:57:38 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:39 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:39 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "p1XIzf2bt1Mh8IumJiUOMxTbzvX9HoCGjyQqBBtW6nZzdZoMEBLJvrZ8xJoZ4SPRUwTMSWtrvJZNizkXxU9kjlcKAUx20BC1TSYOLWoA8E8b30dZ1JUFAFH5hBoc46u5YliQBZtbsLkxL0o5hKdREEqo8TYIe5Zosjb77X3uqXWgoT6nXgrW01mvNHm5ZIQbgaZfGDqHJcb6Zrwh9VtDZEhzoEKIyM6LEuGBx9jCkB5uY2qOPscs3P1NuXSCW7P7QNHv6urbazafDgVbpltyJNf81AL6rI3YNbWHns37mvDVE",
+  "answer": "Example09",
+  "question": "H15oCp7m98bccqkowsk7Gu8Si4LaQu21de4YzmYLdtepKzQNrCwqJ4OfSklwVpQU7WhW0mxigseZBmSjHHtk4ZcTX1K0MMvr665Glc8IJ7g8LXhdTXfwahd6DEQ3yIn8SHTvzckrFJNGVpNCJSZO8MGJIoWo0bihUVgO021iaIvWMjEbIcJbylz63zkplBgiN9FNRD3EhEOyDrzTpzKoas0dkAs71sIKSAGI7XCEAqgmTnjzC6UO9B2au5orb05J",
+  "link": "Example09"
+}
+2019-07-18 07:57:39 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:39 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:39 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:39 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:39 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:39 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 07:57:39 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:40 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:40 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "answer": "Example10",
+  "question": "Example10"
+}
+2019-07-18 07:57:40 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:40 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:40 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:40 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:40 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:40 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 07:57:40 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:41 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:41 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "",
+  "answer": "Example11",
+  "question": "Example11",
+  "link": ""
+}
+2019-07-18 07:57:41 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:41 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:41 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:41 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:41 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 07:57:41 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 07:57:41 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 07:57:42 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 07:57:42 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/null HTTP/1.1
+with body:
+{
+  "code": "hKzhrQIt4nDKIVdt4bWyy0UqaFvnIvA68QyvBPs4WNk5TDVcq1OGDdnJ3nKbZu6cx9lQlK4ibHSdv7I8onk7j0YQKnGkVRMKFEgzng0qqep23SLaolUVeWXdGeDaOCvn3N1vaZM15mvE4TmRtux4er5n864VAhG3UTrtBM4LqhH0Aef0tIKoU6p22JMk6qWRR81pRwo6P9Mln4wIUQoLKFUuGWkomgHaeKWfG4XDtKGYHREXJlfYBeDZrEGNnq7eLgnvdDjI2xzeQnjHCGxByVNkQBnvQ5oUH2fbF0iUu2awh",
+  "answer": "Example12",
+  "question": "Example12",
+  "link": "KB93Npt517NyuhvyyofvhJnzVzxAETIV7T8FLJ4gxw6M0erlfsX6mlQOGQVPqFbHoCALCH2nk9PMCNj3fZmBxp0fEw9QHhjOP44yNCnqK1n3jg1yZzhG05gzN0b1dFjY5QBYv19kAM3uZCoK9lbFpOQw1kqiD9PKDuoe3hgeCiwZpVHumZIeYDzb2MkWGhVHP06IPK7LKFp0GajkNJTio31y9sBGHNHsgsZ85nnrf4ieq7RPKAliAT431NMUDRTZdAFn62piw1zJaaPEgYh3pQkrCUnMt1ntiPfVZ9SItUdO8"
+}
+2019-07-18 07:57:43 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 05:57:42 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 07:57:43 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 07:57:43 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 07:57:43 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 07:57:44 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 08:00:25 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 08:00:25 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 08:00:25 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 08:00:25 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 08:00:25 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 08:00:26 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 08:00:27 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 08:06:33 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 08:06:33 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 08:06:33 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 08:06:34 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 08:06:34 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 08:06:34 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:139 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 08:06:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:144 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 08:06:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:106 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example01",
+  "question": "Example01",
+  "link": "Example01"
+}
+2019-07-18 08:06:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:110 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 06:06:35 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 08:06:35 | DEBUG | [Test worker] c.g.b.c.BaseHttpClient:112 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 08:06:35 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 08:06:35 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 08:06:36 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 14:38:04 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 14:38:04 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 14:38:04 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 14:38:04 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:04 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 14:38:04 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:06 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:38:06 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example01",
+  "question": "Example01",
+  "link": "Example01"
+}
+2019-07-18 14:38:06 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:38:06 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:38:06 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 14:38:06 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:06 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:06 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 14:38:06 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:07 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:38:07 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "Example02",
+  "question": "Example02",
+  "link": "Example02"
+}
+2019-07-18 14:38:08 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:38:08 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:38:08 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 14:38:08 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:08 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:08 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 14:38:08 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:38:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "uCx40D8ufTMueXS9a1U0gRUbfUSwLOyQ1HIwrYXTqgPIK6WUvpMpVRnmSkONwGGkRhOuXsenSv8MdjhItA97YZmN5vh6AutuOCQLJGVoOmK0I9DzYdnVG4CqqIAvhmtIO3mxKnBHNnhoa8u6rf19ynCQ3D8UhM8qufdEiSmUbQMDRvnYExg1fkWVT881p0LQ0084VWv97CxpuUKzpyam1DVkop40NG6Rkrtus5J0zllHQw61tIFELAUvgHaYiUYfQVNAqamwT4Sywwk9rEDOQIm7hITPXyrQnzKL2hAmts4v8",
+  "answer": "Example03",
+  "question": "Example03",
+  "link": "Example03"
+}
+2019-07-18 14:38:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:38:09 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:38:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 14:38:09 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:09 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:09 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 14:38:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:10 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:38:10 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "Example04",
+  "link": "Example04"
+}
+2019-07-18 14:38:11 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:38:10 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:38:11 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 14:38:11 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:11 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:11 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 14:38:11 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:12 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:38:12 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "",
+  "question": "Example05",
+  "link": "Example05"
+}
+2019-07-18 14:38:12 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:38:12 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:38:12 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 14:38:12 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:12 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:12 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 14:38:12 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:38:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour3.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "xK2k8r2Z4Hn3dQsxAfpFUFTsnk1l4ZPxHmj2e2ajEGSCitxDOBWNcWY6tI2u7fLC1NYV8ypug3NCyO33i3YfBpj71ELTfFSqQweQB3lufrTSQQVBHh1ZeEwOsime8IoDyU1hBUs7O2NYvsKAwcnoZk76F1X1CkbBbpaxWjcexmahizGZbpJOZT6P4m7REsvlAAz6m9cnOAYFuSGrzlz7IRYtOQ2qMlUb5r5XwsFkwGduuBVp14iWsIAvhfX8T2SfbBciMgnhfnvwmvXSImOuSQr6WN7WEQ6fDZCpkVo8mk4ct",
+  "answer": "ZnO5uvOmPfspzg8zg1ZAEsXeBJjfsFa7FRT4o0kw26mX285Mr5bJiLc9x3FH9MG8kN2BtSmDk0tBTQcIv3zX7NSsSJjvTXyrEo6kZBJuBKJh5cm16nZFCGrAPspy9cVzum8fQFEgOM59hOIOLyQDZtQzAnmi0uuw65yVeTVwYHsmtc2CMSTW16gFbElOLCnhKPwlaKUwschtq8BgwDgVvaDiBn1wrlwwb10SiKvWpgqbLR1MbPjWKotL9rU2TQrZ",
+  "question": "Example06",
+  "link": "Example06"
+}
+2019-07-18 14:38:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 429 Too Many Requests [Date: Thu, 18 Jul 2019 12:38:14 GMT, Transfer-Encoding: chunked, Connection: keep-alive] ResponseEntityProxy{[Chunked: true]}}
+2019-07-18 14:38:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:38:14 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:14 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:14 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 14:38:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:15 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:38:15 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:15 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:15 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 14:38:15 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:16 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:38:16 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:16 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:16 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 14:38:16 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:17 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:38:17 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:17 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:17 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 14:38:17 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:19 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:38:19 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:19 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:19 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 14:38:19 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:20 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:38:20 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:20 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:38:20 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 14:38:20 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:38:21 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:38:22 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:38:22 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 14:38:22 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 14:48:05 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 14:48:05 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 14:48:05 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 14:48:05 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:05 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 14:48:06 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:07 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:07 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:08 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:08 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 14:48:08 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:09 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:09 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:09 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 14:48:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:10 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:10 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:10 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:10 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 14:48:10 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:12 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:12 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:12 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:12 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 14:48:12 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:13 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:13 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:13 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:13 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 14:48:13 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:14 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:14 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:14 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 14:48:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:15 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:15 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:15 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:15 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 14:48:15 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:16 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:16 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:16 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:16 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 14:48:16 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:17 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:17 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:17 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:17 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 14:48:17 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:44 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 14:48:44 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 14:48:44 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 14:48:44 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:44 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 14:48:44 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:46 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:46 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:46 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 14:48:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:47 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:47 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:47 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:47 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 14:48:47 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:48 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:48 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:48 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:48 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 14:48:48 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:50 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:50 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:50 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:50 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 14:48:50 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:51 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:51 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:51 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:51 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 14:48:51 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:52 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:52 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:52 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:52 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 14:48:52 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:53 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:53 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:53 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:53 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 14:48:53 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:55 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:55 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:55 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:55 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 14:48:55 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:56 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:56 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:56 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:56 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 14:48:56 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:57 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:57 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:57 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:57 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 14:48:57 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:58 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:58 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:58 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:48:58 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 14:48:58 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour3.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:48:59 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 14:48:59 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:48:59 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 14:49:00 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 14:50:14 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 14:50:14 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 14:50:14 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 14:50:14 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:50:14 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 14:50:14 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:50:16 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:50:49 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example01",
+  "question": "Example01",
+  "link": "Example01"
+}
+2019-07-18 14:50:49 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:50:49 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, Access-Control-Allow-Origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:50:49 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+
+Hey ya! Great to see you here. Btw, nothing is configured for this request path. Create a rule and start building a mock API.
+
+2019-07-18 14:53:19 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 14:53:19 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 14:53:19 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 14:53:19 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:19 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 14:53:19 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:21 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:21 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example01",
+  "question": "Example01",
+  "link": "Example01"
+}
+2019-07-18 14:53:23 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:23 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:23 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:23 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:23 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:23 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 14:53:23 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:24 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:24 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "Example02",
+  "question": "Example02",
+  "link": "Example02"
+}
+2019-07-18 14:53:27 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:26 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:27 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:27 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:27 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:27 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 14:53:27 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:28 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:28 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "NMymVO2SKfkm6sJkmSLYhURDtXOi5pu82NGoGV2UoeIKrPYYIqO06pe7qEPWcMKAKynzTIkR9fyYjHn90Ke98ulGvvloc8HUWkZsz7BB4PRiKKEnsK14cghSyps8ciobpSEb14u9zVFPjtkkABI7ZNUncYhc11ue7uNzeVBwtgaGsMcXHTm5dD8hrPqWpIiCmIrmJEuTcROKw8eKdTWi0XGfCbJiQuKRSTwwU5TCGaHko3fcfpmwJu17RYhP6kKITWYajJHEr02DbMtzzANcYOe1Cx0UOM2NSAIAhT8pjcNrT",
+  "answer": "Example03",
+  "question": "Example03",
+  "link": "Example03"
+}
+2019-07-18 14:53:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:30 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:30 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:30 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:30 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 14:53:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:31 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:31 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "Example04",
+  "link": "Example04"
+}
+2019-07-18 14:53:34 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:33 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:34 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:34 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:34 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:34 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 14:53:34 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:35 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:35 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "",
+  "question": "Example05",
+  "link": "Example05"
+}
+2019-07-18 14:53:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:37 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:37 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:37 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:37 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 14:53:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:38 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:38 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "d3OJfXVbnMXxHxxtjVbw69KcJYTMQFijhyZN5JwNEh8aGz8Yfc5W2J3sjPMEpX5ujhloP3e7ashjdUWPuQO1pdauVKBUj5ZXLCHb0IJabfxUlbCRJHONWz7SCGgxv4VAXIuXG8ilvi4PeVIOvI7Mk0nglGzbvrWoe45JlebFy7qN8WCfLQfSm2aAy2lmrOwY0LrZd6H6yExJFbuaTVsD15fYzHCzVtI8evCyJUPvgCKxrcnRmNX4FT83xI6XogHSrtWxPpQjMCfFin8AWfyLSd3haupmIym3GAbRI7B7Qsr4d",
+  "answer": "W4zJxddy3txKTMGogAsGFEEoX0lgksQ3ncO3dMCbo7JBbX9PreNMkVGfjDBUJXjcgHDz3u4uqZiM7RSBBfLzU1LLIx50Nd6oozifeAhXfCwpeOwzw3zaN3g2K7PomKByfuuLeRyp30pnUHLcW98p3P8GGwdYkWzdHt0xHGmsbU8Mp7TYj3He74DNfJjpCkAwYuJEZbDBzleA6ER0kGlXIO0pmoGk5ZW2mD70M8Mc5AAeNbtsY0SsY2KV5QGDPH8s",
+  "question": "Example06",
+  "link": "Example06"
+}
+2019-07-18 14:53:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:40 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:41 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:41 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:41 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 14:53:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:42 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:42 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example07",
+  "question": "validQuestionValue",
+  "link": "Example07"
+}
+2019-07-18 14:53:45 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:44 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:45 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:45 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:45 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:45 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 14:53:45 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "Example08",
+  "question": "",
+  "link": "Example08"
+}
+2019-07-18 14:53:48 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:48 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:48 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:48 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:48 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:48 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 14:53:48 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:49 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:49 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "ZFygGTJ0UPmR759jmXiKJY0hYsXtXv7p3INDKJJkXYb0UeU9C3CZxcvVk1sO8ZLq6KmXyEoUwNGBmE0tD5FANhh805rb2OyjHFdliEFVtt1w29M2g5RPKsDQpJcRs5krZ6C8bZGKW4R39bnH5hjA3YGGZD1CXo2dqxnRfV3V5IrP8iUHgvg8ib7PBWCEeYG0KzLAAtdW9j13zs0KrNyuLcOGLnyM9pDcwQAnnh10FQPUOhxlwrCxNfREQ7W4KUs7UGsUt9XVfdFcmQYBGeljiTgHTiS3KWfRddrCYj0CyUErF",
+  "answer": "Example09",
+  "question": "hCZe7Y2qWH4scjVNQjhb38gGB5xfhC1saLMrLpipZxHAY9DePhoq6O24gXzrNnUsoZW5kOkMlGzzJ7KIkwJGJQpwbtsMJ8t3BBLGBODYksfzQwrOc3HdoPtOtw0E4KZpUU93gpzbZIhSNBkjNeDl4kFvS0a25MLi2bduMZw1OaiKkyQ2XUl9lk3x1AXY8UkdsbAhR9s5PwjkTPtVXkOJOfE8CvyBUZudIzqy0DXRuTabcNHOaGAyJnv4uov2p1PT",
+  "link": "Example09"
+}
+2019-07-18 14:53:52 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:52 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:52 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:52 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:52 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:52 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 14:53:52 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:53 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:53 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example10",
+  "question": "Example10",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:56 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:55 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:56 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:56 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:56 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:56 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 14:53:56 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:53:57 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:57 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "Example11",
+  "question": "Example11",
+  "link": ""
+}
+2019-07-18 14:53:59 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:53:59 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:53:59 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:53:59 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:53:59 | INFO  | [Test worker] c.g.e.TestEnvironment:65 - *************************************
+2019-07-18 14:53:59 | INFO  | [Test worker] c.g.e.TestEnvironment:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 14:53:59 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 14:54:01 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:54:01 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "6CuJlB2uzW8APDT9UqxSK5MFcpWkWoHmbXZtw17A6OUzcOb8Q2RZxKrEKdEPGrPHXoq6HnkTqR8i4M7Ay83elic5HtZ46Ce8iiIFoaz1VhABQWlx9I1egtF1Upw4Bm6c06lBMtMOfFCuIF9EB0XPn08wk0qEb4mgMNkaeTnzKBmaQrEsiZgkEdyLND2vC4yUBT12dEyh47mClrB3rKHhTfILsVsiDKd4HY8Y8Fg5mf82ZGhBUva6bBJHur6tnX4vcwgkOLwu6fhdV0WZaF1whNPb4S5XUDfQd3uMRxTjY3Dic",
+  "answer": "Example12",
+  "question": "Example12",
+  "link": "5DXmPLiIPvzPuGnqZWal0ZDP9s6Fl7TZqvCiX71on55YRTF61w4RNIh4uq0wo79EBAmjgbPwG0e525UpmMOtRJpO9HTVXjAH6gXYxq8euL5RxSHSpRtfFXbB5AUh7UfUlKI6mL0tKkI0MS0RsgKcrObLOrbd4ZviU1pNPIiMaazMjPZH0CkqDeWr6V6QGyIzyP2yE1PkIwRVRIWINcFf2y3xZkIIe3p1hzX4XPKcGH7gqhEFtIWHxVfeX57gkU99ws2WshkznMSS8yYeJADahD4BnSYVi2LugvHiEidX6amZy"
+}
+2019-07-18 14:54:03 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 12:54:03 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 14:54:03 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 14:54:03 | INFO  | [Test worker] c.g.e.TestEnvironment:79 - scenario failed *************************************
+2019-07-18 14:54:03 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 14:54:04 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 17:05:28 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 17:05:28 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 17:05:28 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 17:05:28 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:28 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 17:05:29 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example01",
+  "question": "Example01",
+  "link": "Example01"
+}
+2019-07-18 17:05:32 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:32 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:32 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:32 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:32 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:32 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 17:05:32 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:33 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:33 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "Example02",
+  "question": "Example02",
+  "link": "Example02"
+}
+2019-07-18 17:05:36 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:36 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:36 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:36 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:36 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:36 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 17:05:36 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "ivtyunvgY1lGMmgnTFasn76z9uRvqoVywYlGWBfCs5j28gGWHadgvyim4LTwxsDihJudunxjjqZh4OUJwjPlixATGhTbrcIMZQ4flBfSmUXook3huluxhQJIYHUsYi1eRVzBwikPFRCBLbvO9kRESQ1OiKVjUQH8hFyQC4tijpD2Q4bcfhqsyNh38nf9G4SuF60Le52Qd872KBO3oLpL6k0WVwf9kOcH0PbhtzjuvdDt50pmqp6ZmRxnpfwcCX2MQmGsIreK9R7FTU5EwEhMJ9PoAzhYcDx0bCOw6F4kfUlHo",
+  "answer": "Example03",
+  "question": "Example03",
+  "link": "Example03"
+}
+2019-07-18 17:05:39 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:39 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:39 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:39 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:39 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:39 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 17:05:39 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "Example04",
+  "link": "Example04"
+}
+2019-07-18 17:05:43 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:43 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:43 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:43 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:43 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:43 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 17:05:43 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:44 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:44 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "",
+  "question": "Example05",
+  "link": "Example05"
+}
+2019-07-18 17:05:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:46 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:46 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:47 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:47 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 17:05:47 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:48 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:48 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "NJLwQ2yD8d5o145MApCWMvOwqucU8v9kPtr7oa7S8BePNSSBsvTRkDbN9c65UYc8eJ2sQdbIZVpiKjxi5GH2XHkC9kwKaGSBN9E7o52zXJZTtTXOgQdP6pxHpQBi2LEtDjqWOLzn1uFtwk1q6PCOfa1feANFxIHfK6DEfo5qkUEvAwtjVBLg5sKUvs4jDkV18MHcMxGQfMQ3gjEf0zlAjPsi6s1i6g2pphUlMFZ8W6YDHF2ia5H6P3Bt7BYiUE0osDVQJAvjISHwCdjUiEbJKhh4ybCDLABmbsTdRXbgXnkKl",
+  "answer": "idylBwz1pv1DnXaBA3dhgq4ygvgGJPqhH83Qy6NRdDJdF2t5vhCrIZJZMqWnuCGySKnvJjCKlnQywpGLUPEIdUn8xnNV6shutubr4pes3hw1nHXsZ4NT6i7fCMRq6q47QxpdFKtb8cHZyjq78VVs50CHjZfZZNlVEWwFZKAjy8bVU6qnTcLHyhWKQP8N3MFbkthUZ6jFjrIX9rPk1KvQrcp4juuxdSzd6M8SJbrtcBTNc0aRsCaZ8eKqn5a1sB4N",
+  "question": "Example06",
+  "link": "Example06"
+}
+2019-07-18 17:05:50 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:50 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:50 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:50 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:50 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:50 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 17:05:50 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:52 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:52 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example07",
+  "question": "validQuestionValue",
+  "link": "Example07"
+}
+2019-07-18 17:05:54 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:54 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:54 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:54 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:54 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:54 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 17:05:54 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:55 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:55 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "Example08",
+  "question": "",
+  "link": "Example08"
+}
+2019-07-18 17:05:57 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:05:57 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:05:57 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:57 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:05:57 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:05:57 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 17:05:57 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:05:59 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:05:59 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "a5gf8QuCYPsM4Y76BVtUzPvlVAgzcP8yeRUGNNBtTwGc0XnUYT4MV5q3WXbIblIRpctbyjknP3squyUkEFTIDgb8jC8EbjSaxxVWXQ00PsRaSZAe3zySInKr6Db2nv0OSZWeLelPdMyaIai0aHqSFpvj4H4WDr1MX0g6pHMjrTTRjzwTQ0xZva23Z2u98Rdwq97Eb1nS8CFbID4JJB6763WU4zjzeav1Rn4h9l0T6ZZkXknZYmIaHecyFyMUgdtyL9B4ASLKHf6W5o4Nn94kJARuj0i6OH5ddhetfio7QXY08",
+  "answer": "Example09",
+  "question": "Qj9M3tjycVKCpZqvpIG4ntDFBJs7ePjxh6vorCXyXJZXOXyh5UWkjIOrFNIN6oTpAMLPolVENnVE7Vr91rzIuBYi2LRNyjHb0T7eA8WwtkAEwfK3ya0Jldi941nJFEeCRuUBMjQc0DuRTx5sLEPSsyh4U4dGFJKUtAvqNvxTwcFoDafzlAH9gzfTlmOwzErY5coUnuE9C035OUrgiWnTkiFdUskVxsdrVP1vmapSvnrBvhjc8hzS96S3P4bDcSkh",
+  "link": "Example09"
+}
+2019-07-18 17:06:01 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:06:01 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:06:01 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:06:01 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:06:01 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:06:01 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 17:06:01 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:06:02 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:06:02 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "validCodeValue",
+  "answer": "Example10",
+  "question": "Example10",
+  "link": "validLinkValue"
+}
+2019-07-18 17:06:04 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:06:04 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:06:04 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:06:04 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:06:04 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:06:04 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 17:06:04 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:06:05 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:06:05 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "",
+  "answer": "Example11",
+  "question": "Example11",
+  "link": ""
+}
+2019-07-18 17:06:07 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:06:07 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:06:07 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:06:07 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:06:07 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:06:07 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 17:06:08 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:06:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:06:09 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:105 - SEND PUT REQUEST: PUT https://carrefour2.free.beeceptor.com/v1/faqs/validIdValue HTTP/1.1
+with body:
+{
+  "id": "validIdValue",
+  "code": "0AlLWRVbrPHIQOlolIKMdrsSOgIFdU8eWSL22YMV81i0X74aBPsDQx8XT4pgD9g2ifEw2D3tw62BFY1LIbEmlucOlual8J6ZReM50tSDrWW2eqfinq0OMSHWcAZyt9EY9NG7Ftk8Xjp77G7qiSZiecTWX3Pe0w053UDmOlCvjmr5Wu23RHOffazmyCJny2JahC43IvL3BNVR116gPB1FqHNuP6Jml1ce4gT2AB5ImVVJi4WFWwoctTOPHfOuMnK64zRtfWCO7f0ue1756ea6ctXq4pjKYDlihHOWDOUYiNPOx",
+  "answer": "Example12",
+  "question": "Example12",
+  "link": "VOvbLq0V66UCKEdkBC73fIbEKFeaaI0rmD7VoXnnaX1BRbEuxomdUeiJvwsXBDad3BSrUAeCAfT7uADhdeaFJI7IMiS70ViiAyejsXTcgcxIR8yxJ9KbOmO5CEortAl1J6kD3G3pKWNKlBS15KjHgS31ymekqN1iSrXh38Va8TVtQrEpc3Kz4EwLsm4deSJ9G4uB0AiM4Jfc8vwB7lYdM53YqLthL4Uth4jlbMK1AkRaRj9VX3XBYGVTJ4IdRDAc3dpwQigG02S0fWi9XOyv9aQYpTT8kb5rILbZc0Yc1kPCM"
+}
+2019-07-18 17:06:11 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:109 - RESPONSE OF PUT REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:06:11 GMT, Content-Type: text/plain, Transfer-Encoding: chunked, Connection: keep-alive, access-control-allow-origin: *, Vary: Accept-Encoding] ResponseEntityProxy{[Content-Type: text/plain,Chunked: true]}}
+2019-07-18 17:06:11 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:111 - RESPONSE OF PUT REQUEST WITH BODY: 
+{"id":"validIdValue",
+			  "code": "validCodeValue",
+			  "answer": "validAnswerValue",
+			  "question": "validQuestionValue",
+			  "link": "validLinkValue"
+			}
+2019-07-18 17:06:11 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:06:11 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 17:06:12 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 17:06:18 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:185 - SEND POST REQUEST: POST http://35.205.254.105:8080/rest/raven/1.0/import/feature?projectKey=LudaTestManager HTTP/1.1
+with body:
+org.apache.http.entity.mime.MultipartFormEntity@65b28b2
+2019-07-18 17:06:28 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:74 - SEND GET REQUEST: GET http://dummy.restapiexample.com/api/v1/employees HTTP/1.1
+2019-07-18 17:06:29 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:78 - RESPONSE OF GET REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:06:29 GMT, Server: Apache, Expires: Thu, 19 Nov 1981 08:52:00 GMT, Cache-Control: no-store, no-cache, must-revalidate, Pragma: no-cache, Access-Control-Allow-Origin: *, Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client, Set-Cookie: PHPSESSID=55c828f2c6f104a1557a009405c2f539; path=/, Upgrade: h2,h2c, Connection: Upgrade, Keep-Alive, Vary: Accept-Encoding, Referrer-Policy: , Keep-Alive: timeout=5, max=75, Content-Type: text/html; charset=UTF-8] org.apache.http.client.entity.DecompressingEntity@9d6e843}
+2019-07-18 17:11:16 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:185 - SEND POST REQUEST: POST http://35.205.254.105:8080/rest/raven/1.0/import/feature?projectKey=LudaTestManager HTTP/1.1
+with body:
+org.apache.http.entity.mime.MultipartFormEntity@793df0b7
+2019-07-18 17:11:26 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:74 - SEND GET REQUEST: GET http://dummy.restapiexample.com/api/v1/employees HTTP/1.1
+2019-07-18 17:11:27 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:78 - RESPONSE OF GET REQUEST: HttpResponseProxy{HTTP/1.1 200 OK [Date: Thu, 18 Jul 2019 15:11:27 GMT, Server: Apache, Expires: Thu, 19 Nov 1981 08:52:00 GMT, Cache-Control: no-store, no-cache, must-revalidate, Pragma: no-cache, Access-Control-Allow-Origin: *, Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client, Set-Cookie: PHPSESSID=a039feeb774c472ea23e61fa8535f48d; path=/, Upgrade: h2,h2c, Connection: Upgrade, Keep-Alive, Vary: Accept-Encoding, Referrer-Policy: , Keep-Alive: timeout=5, max=75, Content-Type: text/html; charset=UTF-8] org.apache.http.client.entity.DecompressingEntity@687391e9}
+2019-07-18 17:11:34 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 17:11:34 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 17:11:34 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 17:11:34 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:34 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 17:11:34 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:36 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:36 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:36 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:36 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 17:11:36 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:37 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:37 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:37 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 17:11:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:38 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:38 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:38 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:38 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 17:11:38 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:40 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:40 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:40 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:40 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 17:11:40 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:41 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:41 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:41 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 17:11:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:42 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:42 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:42 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:42 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 17:11:42 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:43 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:43 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:43 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:43 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 17:11:43 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:44 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:44 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:44 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:44 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 17:11:44 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:45 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:45 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:45 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:45 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 17:11:45 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:11:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:11:46 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:11:46 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:11:46 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 17:11:46 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:29 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 17:36:29 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 17:36:29 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 17:36:29 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:29 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 17:36:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:31 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:31 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:32 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:32 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 17:36:32 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:33 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:33 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:33 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:33 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 17:36:33 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:34 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:34 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:34 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:34 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 17:36:34 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:35 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:35 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:35 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:35 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 17:36:35 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:36 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:36 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:36 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:36 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 17:36:36 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:37 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:37 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:37 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 17:36:37 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:38 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:38 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:38 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:38 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 17:36:38 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:40 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:40 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:40 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:40 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 17:36:40 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:41 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:41 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:41 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 17:36:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:41 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:41 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:41 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 17:36:41 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:42 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:42 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:42 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:36:42 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 17:36:42 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:36:43 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:36:43 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:36:43 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-18 17:36:44 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-18 17:38:17 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-18 17:38:17 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-18 17:38:17 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-18 17:38:17 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:17 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without code 
+2019-07-18 17:38:17 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:19 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:19 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:19 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:19 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null code 
+2019-07-18 17:38:19 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:20 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:20 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:20 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:20 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code 
+2019-07-18 17:38:20 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:21 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:21 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:21 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:21 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer 
+2019-07-18 17:38:21 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:23 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:23 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:23 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:23 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer 
+2019-07-18 17:38:23 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:24 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:24 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:24 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:24 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer 
+2019-07-18 17:38:24 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:25 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:25 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:25 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:25 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question 
+2019-07-18 17:38:25 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:26 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:26 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:26 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:26 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question 
+2019-07-18 17:38:26 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:27 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:27 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:27 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:27 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question 
+2019-07-18 17:38:27 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:29 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:29 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:29 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:29 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link 
+2019-07-18 17:38:29 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:30 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:30 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:30 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link 
+2019-07-18 17:38:30 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}
+2019-07-18 17:38:31 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:143 - RESPONSE OF POST REQUEST: 
+429 - Too Many Requests. Refer: https://beeceptor.com/pricing
+2019-07-18 17:38:31 | INFO  | [Test worker] c.g.e.ScenarioContext:79 - scenario failed *************************************
+2019-07-18 17:38:31 | INFO  | [Test worker] c.g.e.ScenarioContext:65 - *************************************
+2019-07-18 17:38:31 | INFO  | [Test worker] c.g.e.ScenarioContext:66 -  Started Test Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link 
+2019-07-18 17:38:31 | DEBUG | [Test worker] c.g.b.c.ApacheHttpClient:138 - SEND POST REQUEST: POST https://carrefour2.free.beeceptor.com/v1/faqs HTTP/1.1
+with body:
+{
+  "code": "validCodeValue",
+  "answer": "validAnswerValue",
+  "question": "validQuestionValue",
+  "link": "validLinkValue"
+}

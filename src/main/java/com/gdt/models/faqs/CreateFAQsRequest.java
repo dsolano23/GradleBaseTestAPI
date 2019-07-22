@@ -21,4 +21,13 @@ public class CreateFAQsRequest {
         this.link = faQsDto.getLink();
     }
 
+    @Override
+    public String toString() {
+        return "{" + "\n\t\t" +
+                "code='" + code + "\n\t\t" +
+                ", answer='" + answer + "\n\t\t" +
+                ", question='" + question + "\n\t\t" +
+                ", link='" + link + "\n\t" +
+                '}';
+    }
 }

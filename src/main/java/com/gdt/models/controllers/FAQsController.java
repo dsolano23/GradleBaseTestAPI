@@ -1,13 +1,11 @@
 package com.gdt.models.controllers;
 
 
-import com.gdt.baseClient.beans.ObjectErrorsDto;
-import com.gdt.baseClient.beans.RequestModelDtoOld;
-import com.gdt.baseClient.constants.HttpHeadersEnum;
-import com.gdt.baseClient.models.StandardResponse;
+import com.gdt.baseClient.beans.RequestDto;
+import com.gdt.baseClient.beans.RestIterationDto;
+import com.gdt.baseClient.client.RestAssuredClient;
 import com.gdt.enviroment.EnvironmentConstantsNames;
 import com.gdt.enviroment.ScenarioContext;
-import com.gdt.models.beans.FAQsDto;
 import com.gdt.models.faqs.CreateFAQsRequest;
 import com.gdt.models.faqs.UpdateFAQsRequest;
 import com.gdt.utilsType.EnvPropertiesManagement;
@@ -16,9 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.HashMap;
 
-public class FAQsController extends AbstractBasicController {
+public class FAQsController extends RestAssuredClient {
 
     private static Logger logger= LoggerFactory.getLogger(FAQsController.class);
 
@@ -33,65 +30,41 @@ public class FAQsController extends AbstractBasicController {
 
     public static final String FAQ_RESPONSE = "FaqResponse";
 
+    public RestIterationDto createFAQs(ScenarioContext scenarioContext, CreateFAQsRequest createFAQsRequest) throws IOException {
+        Scenario scenario = scenarioContext.getScenario();
+        RequestDto requestDto = new RequestDto();
 
-    public FAQsController(int maxRetry, int timeToLive) {
-        super(maxRetry, timeToLive);
+        requestDto.setBody(createFAQsRequest.toString());
+        requestDto.setApiPath(CREATE_FAQs_URL);
+
+        scenario.write("POST ----- Executed: - \n" + requestDto.toString());
+
+        RestIterationDto restIterationDto = this.launchPostRequest(requestDto);
+
+        scenario.write("POST -----  Respond: - \n" + restIterationDto.toString());
+
+        scenario.write("POST -- ElapsedTime: " + restIterationDto.getElapsedTime());
+
+        return restIterationDto;
+
     }
 
-    public StandardResponse createFAQs(ScenarioContext environment, CreateFAQsRequest createFAQsRequest) throws IOException {
+    public RestIterationDto updateFAQ(ScenarioContext scenarioContext, UpdateFAQsRequest updateFAQsRequest) throws IOException {
+        Scenario scenario = scenarioContext.getScenario();
+        RequestDto requestDto = new RequestDto();
 
-        StandardResponse standardResponse = new StandardResponse();
+        requestDto.setBody(updateFAQsRequest.toString());
+        requestDto.setApiPath(UPDATE_FAQ_URL);
 
-        HashMap<String, Object> headers = new HashMap<>();
-        headers.put(HttpHeadersEnum.CONTENT_TYPE_JSON.headerKey, HttpHeadersEnum.CONTENT_TYPE_JSON.headerValue);
-        headers.put(HttpHeadersEnum.ACCEPT_CHARSET_UTF8.headerKey, HttpHeadersEnum.ACCEPT_CHARSET_UTF8.headerValue);
+        scenario.write("PUT ----- Executed: - \n" + requestDto.toString());
 
-        RequestModelDtoOld request = new RequestModelDtoOld();
-        request.setUrl( mainUrl + CREATE_FAQs_URL );
-        request.setHeaders(headers);
-        request.setBody(gson.toJson(createFAQsRequest));
+        RestIterationDto restIterationDto = this.launchPutRequest(requestDto);
 
-        Scenario scenario = environment.getScenario();
-        scenario.write("POST ----- Executed: - \n" + request.toString());
+        scenario.write("PUT -----  Respond: - \n" + restIterationDto.toString());
+        scenario.write("PUT -- ElapsedTime: " + restIterationDto.getElapsedTime());
 
-        resp = post(request);
-        standardResponse.setRawResponse(resp);
-        if(resp.getRequestHttpCode() >= 400 && resp.getBodyContent()!= null ) {
-            standardResponse.setObjErrors(gson.fromJson(resp.getBodyContent(), ObjectErrorsDto.class));
-        } else {
-            standardResponse.setFilterResponse(gson.fromJson(resp.getBodyContent(), FAQsDto.class));
-        }
-        scenario.write("POST -----  Respond: - \n" + resp.toString());
-        scenario.write("POST -- ElapsedTime: -" + standardResponse.getRawResponse().getElapsedTime().toString());
-        return  standardResponse;
-    }
+        return restIterationDto;
 
-    public StandardResponse updateFAQ(ScenarioContext environment, UpdateFAQsRequest updateFAQsRequest) throws IOException {
-
-        StandardResponse standardResponse = new StandardResponse();
-
-        HashMap<String, Object> headers = new HashMap<>();
-        headers.put(HttpHeadersEnum.CONTENT_TYPE_JSON.headerKey, HttpHeadersEnum.CONTENT_TYPE_JSON.headerValue);
-        headers.put(HttpHeadersEnum.ACCEPT_CHARSET_UTF8.headerKey, HttpHeadersEnum.ACCEPT_CHARSET_UTF8.headerValue);
-
-        RequestModelDtoOld request = new RequestModelDtoOld();
-        request.setUrl( mainUrl + UPDATE_FAQ_URL + updateFAQsRequest.getId() );
-        request.setHeaders(headers);
-        request.setBody(gson.toJson(updateFAQsRequest));
-
-        Scenario scenario = environment.getScenario();
-        scenario.write("PUT ----- Executed: - \n" + request.toString());
-
-        resp = put(request);
-        standardResponse.setRawResponse(resp);
-        if(resp.getRequestHttpCode() >= 400 && resp.getBodyContent()!= null ) {
-            standardResponse.setObjErrors(gson.fromJson(resp.getBodyContent(), ObjectErrorsDto.class));
-        } else {
-            standardResponse.setFilterResponse(gson.fromJson(resp.getBodyContent(), FAQsDto.class));
-        }
-        scenario.write("PUT -----  Respond: - \n" + resp.toString());
-        scenario.write("PUT -- ElapsedTime: -" + standardResponse.getRawResponse().getElapsedTime().toString());
-        return  standardResponse;
     }
 
 }

@@ -1,8 +1,5 @@
 package com.gdt.unitTest.httpClientTest;
 
-import com.gdt.baseClient.beans.RequestModelDtoOld;
-import com.gdt.baseClient.beans.ResponseModelDto;
-import com.gdt.baseClient.clients.ApacheHttpClient;
 import com.gdt.baseClient.constants.HttpHeadersEnum;
 import org.junit.Assert;
 import org.junit.Test;
@@ -16,7 +13,7 @@ import java.util.HashMap;
 public class BasicFunctionalityTest {
 
     private static final Integer HTTP_OK =200;
-
+/*
     @Test
     public void testGetHttpClientConnection(){
         ApacheHttpClient client = new ApacheHttpClient(2,10000);
@@ -63,5 +60,5 @@ public class BasicFunctionalityTest {
         }
 
         Assert.assertEquals("http code response is 200",HTTP_OK,response.getRequestHttpCode());
-    }
+    }*/
 }

@@ -80,7 +80,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
               <td>1</td>
-            <td>18 Jul 2019, 17:36</td>
+            <td>22 Jul 2019, 08:52</td>
     </tr>
   </tbody>
 </table>
@@ -133,18 +133,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@UpdateFQAsRestriction</td>
-          <td      class="passed"    >12</td>
-          <td      class="failed"    >12</td>
-          <td     class="skipped"   >36</td>
+          <td      class="passed"    >24</td>
           <td >0</td>
+          <td     class="skipped"   >24</td>
           <td >0</td>
+          <td   class="undefined" >12</td>
           <td class="total">60</td>
 
           <td >0</td>
           <td  class="failed"    >12</td>
           <td class="total">12</td>
 
-          <td class="duration" data-value="13078131261">13.078</td>
+          <td class="duration" data-value="16185074032">16.185</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -190,7 +190,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">2.095</span>
+  <span class="lead-duration duration">2.841</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -227,7 +227,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -264,7 +264,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.255</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -285,11 +285,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">1.839</span>
+  <span class="lead-duration duration">2.839</span>
 
 </div>
 
@@ -297,130 +297,11 @@ $(document).ready(function() {
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-5">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-5" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -429,9 +310,9 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">notSet</span>, answer: <span class="argument">Example01</span>, question: <span class="argument">Example01</span>, link: <span class="argument">Example01</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: notSet, answer: Example01, question: Example01, link: Example01</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -508,7 +389,7 @@ Requested{
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -520,7 +401,7 @@ Requested{
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -561,10 +442,10 @@ Requested{
       </div>
 
   
-  <span class="lead-duration duration">1.066</span>
+  <span class="lead-duration duration">1.078</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
@@ -577,10 +458,10 @@ Requested{
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -592,7 +473,7 @@ Requested{
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -616,7 +497,7 @@ Requested{
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -628,14 +509,14 @@ Requested{
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -656,11 +537,11 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">1.064</span>
+  <span class="lead-duration duration">1.077</span>
 
 </div>
 
@@ -668,130 +549,36 @@ Requested{
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>com.google.gson.JsonSyntaxException:</a>
+
+        
+        
+
+        
+
+        
+  
+        
+
       </div>
-      <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: nullValue, answer: Example02, question: Example02, link: Example02</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
 
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-11">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-11" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -801,8 +588,235 @@ Requested{
           <div class="step">
         
 <div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-8" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2341313088.html">@SmokeTest</a>
+           <a href="report-tag_2208754332.html">@FQAs</a>
+           <a href="report-tag_2173983160.html">@CreateFQAs</a>
+           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.374</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">1.374</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">nullValue</span>, answer: <span class="argument">Example02</span>, question: <span class="argument">Example02</span>, link: <span class="argument">Example02</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: aboveUpperLimit, answer: Example03, question: Example03, link: Example03</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -897,7 +911,7 @@ Requested{
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -932,14 +946,14 @@ Requested{
       </div>
 
   
-  <span class="lead-duration duration">1.143</span>
+  <span class="lead-duration duration">1.180</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -969,7 +983,7 @@ Requested{
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.004</span>
 
           </div>
 
@@ -1006,7 +1020,7 @@ Requested{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1027,11 +1041,11 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">1.135</span>
+  <span class="lead-duration duration">1.180</span>
 
 </div>
 
@@ -1039,130 +1053,11 @@ Requested{
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-16" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-17">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-17" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -1171,9 +1066,9 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example03</span>, question: <span class="argument">Example03</span>, link: <span class="argument">Example03</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: notSet, answer: notSet, question: Example04, link: Example04</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1250,7 +1145,7 @@ Requested{
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1262,7 +1157,7 @@ Requested{
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details ">
+    <div id="after-16" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1303,14 +1198,14 @@ Requested{
       </div>
 
   
-  <span class="lead-duration duration">1.178</span>
+  <span class="lead-duration duration">1.216</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without answer</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1319,10 +1214,10 @@ Requested{
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1334,13 +1229,13 @@ Requested{
 
     </div>
 
-    <div id="before-20" class="inner-level collapse collapsable-details ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -1358,7 +1253,7 @@ Requested{
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1370,14 +1265,14 @@ Requested{
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1398,11 +1293,11 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">1.177</span>
+  <span class="lead-duration duration">1.216</span>
 
 </div>
 
@@ -1410,130 +1305,36 @@ Requested{
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
-          <a>com.google.gson.JsonSyntaxException:</a>
+
+        
+        
+
+        
+
+        
+  
+        
+
       </div>
-      <div id="msg-22" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: nullValue, answer: nullValue, question: Example05, link: Example05</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
 
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-23">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-23" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -1543,8 +1344,235 @@ Requested{
           <div class="step">
         
 <div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-20" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2341313088.html">@SmokeTest</a>
+           <a href="report-tag_2208754332.html">@FQAs</a>
+           <a href="report-tag_2173983160.html">@CreateFQAs</a>
+           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.213</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-22" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">1.212</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">notSet</span>, answer: <span class="argument">notSet</span>, question: <span class="argument">Example04</span>, link: <span class="argument">Example04</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: aboveUpperLimit, answer: aboveUpperLimit, question: Example06, link: Example06</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1639,7 +1667,7 @@ Requested{
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1674,14 +1702,14 @@ Requested{
       </div>
 
   
-  <span class="lead-duration duration">0.831</span>
+  <span class="lead-duration duration">1.317</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null answer</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1711,7 +1739,7 @@ Requested{
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -1748,7 +1776,7 @@ Requested{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1769,11 +1797,11 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">0.829</span>
+  <span class="lead-duration duration">1.316</span>
 
 </div>
 
@@ -1781,130 +1809,11 @@ Requested{
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-28" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-29">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-29" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -1913,9 +1822,9 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">nullValue</span>, answer: <span class="argument">nullValue</span>, question: <span class="argument">Example05</span>, link: <span class="argument">Example05</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: notSet, answer: Example07, question: notSet, link: Example07</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1992,7 +1901,7 @@ Requested{
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2004,13 +1913,13 @@ Requested{
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details ">
+    <div id="after-28" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2045,14 +1954,14 @@ Requested{
       </div>
 
   
-  <span class="lead-duration duration">1.013</span>
+  <span class="lead-duration duration">1.182</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2061,10 +1970,10 @@ Requested{
   </span>
   <div class="description indention"></div>
 
-  <div id="element-31" class="collapse collapsable-details  in ">
+  <div id="element-29" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2076,13 +1985,13 @@ Requested{
 
     </div>
 
-    <div id="before-32" class="inner-level collapse collapsable-details ">
+    <div id="before-30" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -2100,7 +2009,7 @@ Requested{
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-33">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-31">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -2112,14 +2021,14 @@ Requested{
 
   </div>
 
-  <div id="steps-33" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-31" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2140,11 +2049,11 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">1.011</span>
+  <span class="lead-duration duration">1.181</span>
 
 </div>
 
@@ -2152,130 +2061,36 @@ Requested{
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-34">
-          <a>com.google.gson.JsonSyntaxException:</a>
+
+        
+        
+
+        
+
+        
+  
+        
+
       </div>
-      <div id="msg-34" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: nullValue, answer: Example08, question: nullValue, link: Example08</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
 
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-35">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-35" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -2285,8 +2100,235 @@ Requested{
           <div class="step">
         
 <div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-32" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2341313088.html">@SmokeTest</a>
+           <a href="report-tag_2208754332.html">@FQAs</a>
+           <a href="report-tag_2173983160.html">@CreateFQAs</a>
+           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.258</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-34" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-35">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">1.258</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">aboveUpperLimit</span>, question: <span class="argument">Example06</span>, link: <span class="argument">Example06</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: aboveUpperLimit, answer: Example09, question: aboveUpperLimit, link: Example09</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2381,7 +2423,7 @@ Requested{
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2416,14 +2458,14 @@ Requested{
       </div>
 
   
-  <span class="lead-duration duration">1.296</span>
+  <span class="lead-duration duration">1.194</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-37">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without question</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2453,7 +2495,7 @@ Requested{
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -2490,7 +2532,7 @@ Requested{
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2511,11 +2553,11 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">1.295</span>
+  <span class="lead-duration duration">1.193</span>
 
 </div>
 
@@ -2523,130 +2565,11 @@ Requested{
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-40">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-40" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-41">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-41" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -2655,9 +2578,9 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">notSet</span>, answer: <span class="argument">Example07</span>, question: <span class="argument">notSet</span>, link: <span class="argument">Example07</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: notSet, answer: Example10, question: Example10, link: notSet</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2734,7 +2657,7 @@ Requested{
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2746,7 +2669,7 @@ Requested{
 
     </div>
 
-    <div id="after-42" class="inner-level collapse collapsable-details ">
+    <div id="after-40" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -2787,14 +2710,14 @@ Requested{
       </div>
 
   
-  <span class="lead-duration duration">1.292</span>
+  <span class="lead-duration duration">1.129</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null question</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2803,10 +2726,10 @@ Requested{
   </span>
   <div class="description indention"></div>
 
-  <div id="element-43" class="collapse collapsable-details  in ">
+  <div id="element-41" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2818,13 +2741,13 @@ Requested{
 
     </div>
 
-    <div id="before-44" class="inner-level collapse collapsable-details ">
+    <div id="before-42" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2842,7 +2765,7 @@ Requested{
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-45">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-43">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -2854,14 +2777,14 @@ Requested{
 
   </div>
 
-  <div id="steps-45" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-43" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2882,11 +2805,11 @@ Requested{
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Try to create the new FAQ</span>
   
-  <span class="lead-duration duration">1.290</span>
+  <span class="lead-duration duration">1.129</span>
 
 </div>
 
@@ -2894,130 +2817,36 @@ Requested{
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-46">
-          <a>com.google.gson.JsonSyntaxException:</a>
+
+        
+        
+
+        
+
+        
+  
+        
+
       </div>
-      <div id="msg-46" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: nullValue, answer: Example11, question: Example11, link: nullValue</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
 
 
         
         
 
         
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-47">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-47" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
 
         
   
@@ -3027,8 +2856,235 @@ Requested{
           <div class="step">
         
 <div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-44">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-44" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2341313088.html">@SmokeTest</a>
+           <a href="report-tag_2208754332.html">@FQAs</a>
+           <a href="report-tag_2173983160.html">@CreateFQAs</a>
+           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.197</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-45">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-45" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-46">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-46" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-47">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">1.197</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
   <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">nullValue</span>, answer: <span class="argument">Example08</span>, question: <span class="argument">nullValue</span>, link: <span class="argument">Example08</span></span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: aboveUpperLimit, answer: Example12, question: Example12, link: aboveUpperLimit</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -3123,1491 +3179,7 @@ Requested{
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.004</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2341313088.html">@SmokeTest</a>
-           <a href="report-tag_2208754332.html">@FQAs</a>
-           <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
-      </div>
-
-  
-  <span class="lead-duration duration">0.992</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-49">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-49" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-50">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-50" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.001</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-51">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-51" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
-  
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">Try to create the new FAQ</span>
-  
-  <span class="lead-duration duration">0.990</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-52">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-52" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-53">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-53" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example09</span>, question: <span class="argument">aboveUpperLimit</span>, link: <span class="argument">Example09</span></span>
-  
   <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-54">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-54" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.001</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2341313088.html">@SmokeTest</a>
-           <a href="report-tag_2208754332.html">@FQAs</a>
-           <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
-      </div>
-
-  
-  <span class="lead-duration duration">0.715</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-55">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ without link</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-55" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-56">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-56" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.008</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-57">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-57" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
-  
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">Try to create the new FAQ</span>
-  
-  <span class="lead-duration duration">0.712</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-58">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-58" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-59">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-59" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">notSet</span>, answer: <span class="argument">Example10</span>, question: <span class="argument">Example10</span>, link: <span class="argument">notSet</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-60">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-60" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2341313088.html">@SmokeTest</a>
-           <a href="report-tag_2208754332.html">@FQAs</a>
-           <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
-      </div>
-
-  
-  <span class="lead-duration duration">0.713</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-61">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with null link</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-61" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-62">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-62" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.002</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-63">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-63" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
-  
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">Try to create the new FAQ</span>
-  
-  <span class="lead-duration duration">0.710</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-64">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-64" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-65">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-65" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">nullValue</span>, answer: <span class="argument">Example11</span>, question: <span class="argument">Example11</span>, link: <span class="argument">nullValue</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-66">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-66" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.001</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_4041927134.html">FQAs Manager - CreateFQAs Resource - Validation</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2341313088.html">@SmokeTest</a>
-           <a href="report-tag_2208754332.html">@FQAs</a>
-           <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_402356453.html">@UpdateFQAsRestriction</a>
-      </div>
-
-  
-  <span class="lead-duration duration">0.738</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-67">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful update a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-67" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-68">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-68" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.002</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-69">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-69" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
-  
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">Try to create the new FAQ</span>
-  
-  <span class="lead-duration duration">0.736</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-70">
-          <a>com.google.gson.JsonSyntaxException:</a>
-      </div>
-      <div id="msg-70" class="collapse collapsable-details  in ">
-        <pre>com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at &#10045;.Try to create the new FAQ(file:src/test/resources/features/FAQs/CreateFQAs.feature:59)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
-	at com.google.gson.Gson.fromJson(Gson.java:927)
-	at com.google.gson.Gson.fromJson(Gson.java:892)
-	at com.google.gson.Gson.fromJson(Gson.java:841)
-	at com.google.gson.Gson.fromJson(Gson.java:813)
-	at com.gdt.models.controllers.FAQsController.createFAQs(FAQsController.java:60)
-	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.try_to_create_the_new_faq(FAQsSteps.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:142)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:172)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-71">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-71" class="collapse collapsable-details  in "  aria-expanded="true" >
-          
-          <pre><p>POST ----- Executed: - 
-Requested{
-			url='https://carrefour2.free.beeceptor.com/v1/faqs,
-		headers=
-			Accept-Charset: utf-8
-			Content-Type: application/json,
-		body='{
-			  &quot;code&quot;: &quot;validCodeValue&quot;,
-			  &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			  &quot;question&quot;: &quot;validQuestionValue&quot;,
-			  &quot;link&quot;: &quot;validLinkValue&quot;
-			},
-		multipartTextBody=,
-		files={}
-		}</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to updated the FAQ with the values: id: anyone, code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example12</span>, question: <span class="argument">Example12</span>, link: <span class="argument">aboveUpperLimit</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">The Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-72" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.001</span>
 
           </div>
 
