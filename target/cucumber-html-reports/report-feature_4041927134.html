@@ -80,7 +80,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
               <td>1</td>
-            <td>22 Jul 2019, 17:08</td>
+            <td>23 Jul 2019, 09:23</td>
     </tr>
   </tbody>
 </table>
@@ -133,18 +133,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">FQAs Manager - CreateFQAs Resource - Validation</td>
-          <td      class="passed"    >25</td>
-          <td      class="failed"    >12</td>
-          <td     class="skipped"   >11</td>
+          <td      class="passed"    >26</td>
+          <td      class="failed"    >4</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">48</td>
+          <td   class="undefined" >20</td>
+          <td class="total">50</td>
 
-          <td >0</td>
-          <td  class="failed"    >12</td>
-          <td class="total">12</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >9</td>
+          <td class="total">10</td>
 
-          <td class="duration" data-value="18211620108">18.211</td>
+          <td class="duration" data-value="12792440504">12.792</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -200,18 +200,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">3.298</span>
+  <span class="lead-duration duration">4.565</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without code</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with valid basic values</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -220,7 +220,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -241,7 +241,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
@@ -259,9 +259,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -271,14 +271,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">Example01</span>, question: <span class="argument">Example01</span>, link: <span class="argument">Example01</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -303,7 +303,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Try to create the new FAQ <span class="argument">requestId-01</span></span>
   
-  <span class="lead-duration duration">3.291</span>
+  <span class="lead-duration duration">4.219</span>
 
 </div>
 
@@ -329,19 +329,19 @@ $(document).ready(function() {
 			url='/v1/faqs,
 			headers=,
 			body='{
-					code='null
-					, answer='Example01
-					, question='Example01
-					, link='Example01
+					code='validCodeValue
+					, answer='validAnswerValue
+					, question='validQuestionValue
+					, link='validLinkValue
 				},
 		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
 	Respond{
 			methodType=application/json
 			requestHttpCode=200
-			elapsedTime=2475
+			elapsedTime=3389
 			headers=
-				Date=Mon, 22 Jul 2019 15:08:15 GMT
+				Date=Tue, 23 Jul 2019 07:23:07 GMT
 				Content-Type=application/json
 				Transfer-Encoding=chunked
 				Connection=keep-alive
@@ -354,7 +354,7 @@ $(document).ready(function() {
 			    &quot;question&quot;: &quot;validQuestionValue&quot;,
 			    &quot;link&quot;: &quot;validLinkValue&quot;
 			}
-		}</p><p>POST -- ElapsedTime: 2475</p></pre>
+		}</p><p>POST -- ElapsedTime: 3389</p></pre>
         </div>
       </div>
       </div>
@@ -370,7 +370,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">The <span class="argument">requestId-01</span> Http <span class="argument">200</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -391,11 +391,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">The <span class="argument">requestId-01</span> api response content will be <span class="argument">createFAQsResponse</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -403,22 +403,30 @@ $(document).ready(function() {
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>java.lang.AssertionError:</a>
+
+        
+        
+
+        
+
+        
+  
+        
+
       </div>
-      <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad The API response Code - Received: 0 &amp; Expected: 401 expected:&lt;401&gt; but was:&lt;0&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_message_will_be(ApiCommonValidations.java:101)
-	at &#10045;.The api message error code will be 401(file:src/test/resources/features/FAQs/CreateFQAs.feature:22)
-</pre>
-      </div>
-    </div>
-  </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">requestId-01</span> response of FAQ object will come with the values: id: <span class="argument">anyValue</span>, code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.341</span>
+
+</div>
+
+        
+
+        
 
 
         
@@ -437,7 +445,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -449,13 +457,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -482,18 +490,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">1.582</span>
+  <span class="lead-duration duration">1.656</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null code</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max code length value</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -502,10 +510,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-6" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -517,13 +525,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-7" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -541,7 +549,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -553,14 +561,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">Example02</span>, question: <span class="argument">Example02</span>, link: <span class="argument">Example02</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">equalUpperLimit</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -585,7 +593,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Try to create the new FAQ <span class="argument">requestId-02</span></span>
   
-  <span class="lead-duration duration">1.581</span>
+  <span class="lead-duration duration">1.647</span>
 
 </div>
 
@@ -600,30 +608,30 @@ $(document).ready(function() {
         
   <div class="outputs inner-level">
           <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-10">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-9">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-10" class="collapse collapsable-details " >
+        <div id="output-9" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
 		Requested{
 			url='/v1/faqs,
 			headers=,
 			body='{
-					code='
-					, answer='Example02
-					, question='Example02
-					, link='Example02
+					code='IEnQgnqoTg4WRMMWHNNjAe76UhJfLfHjSYzvuCqiIXMW5WY1W08BdJVbMd03VLzd6qqr7EIupoUzySxn8TQ9m4GLE7Ucl4gkRbf2qACDz35Keo1sPxpXF4TCsIIMwWDPziULarbOT6qgXzloLJ13Lsnto3DPWUYqEVYf0YneLKDFCp3yLZElbJ676SHUi2FYPwy6hprQeWSBYHjrG7sb93CGX9be7heyhv5tYOyr5Kn4UqbjpWY4ePpN7MlKrsXzKnAjC6dsVIh7SHibHnfehEFXxCwnimXVjoo7ixTyZvum
+					, answer='validAnswerValue
+					, question='validQuestionValue
+					, link='validLinkValue
 				},
 		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
 	Respond{
 			methodType=application/json
 			requestHttpCode=200
-			elapsedTime=1560
+			elapsedTime=1623
 			headers=
-				Date=Mon, 22 Jul 2019 15:08:17 GMT
+				Date=Tue, 23 Jul 2019 07:23:09 GMT
 				Content-Type=application/json
 				Transfer-Encoding=chunked
 				Connection=keep-alive
@@ -636,7 +644,7 @@ $(document).ready(function() {
 			    &quot;question&quot;: &quot;validQuestionValue&quot;,
 			    &quot;link&quot;: &quot;validLinkValue&quot;
 			}
-		}</p><p>POST -- ElapsedTime: 1560</p></pre>
+		}</p><p>POST -- ElapsedTime: 1623</p></pre>
         </div>
       </div>
       </div>
@@ -648,34 +656,17 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-02</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-02</span> Http <span class="argument">200</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-11" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-02 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -690,9 +681,9 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">The <span class="argument">requestId-02</span> api response content will be <span class="argument">createFAQsResponse</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -701,6 +692,46 @@ $(document).ready(function() {
         
 
         
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">requestId-02</span> response of FAQ object will come with the values: id: <span class="argument">anyValue</span>, code: <span class="argument">equalUpperLimit</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: The response of FAQ object will come with the values ERROR  Received: code: 14 &amp; Expected code ==: 300
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.faqObjectRespondValidation(FAQsSteps.java:111)
+	at &#10045;.The requestId-02 response of FAQ object will come with the values: id: anyValue, code: equalUpperLimit, answer: validAnswerValue, question: validQuestionValue, link: validLinkValue(file:src/test/resources/features/FAQs/CreateFQAs.feature:46)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -719,7 +750,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -731,7 +762,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -764,18 +795,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">1.592</span>
+  <span class="lead-duration duration">1.924</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit code</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max answer length value</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -784,10 +815,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-12" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-13">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -799,13 +830,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-14" class="inner-level collapse collapsable-details ">
+    <div id="before-13" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -823,7 +854,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -835,14 +866,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example03</span>, question: <span class="argument">Example03</span>, link: <span class="argument">Example03</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">equalUpperLimit</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -867,7 +898,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Try to create the new FAQ <span class="argument">requestId-03</span></span>
   
-  <span class="lead-duration duration">1.580</span>
+  <span class="lead-duration duration">1.916</span>
 
 </div>
 
@@ -882,30 +913,30 @@ $(document).ready(function() {
         
   <div class="outputs inner-level">
           <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-16">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-15">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-16" class="collapse collapsable-details " >
+        <div id="output-15" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
 		Requested{
 			url='/v1/faqs,
 			headers=,
 			body='{
-					code='6RwfxEl1h5faQnDCHNo4b8aIKMX19G4hYmTVAN0mcSXAZw7iDPBJh4Q818OvLqY5VogBXJgvQh9mXllzmdjn9oijTQ82EQGSfHMwzDdLxTNV1IyoX9zkVDGbsJKeQ08JY3q6Hf1rHv8NrxDGF0DpzeSo84feDbammGy4F4H24iqGG9WmhJfG9zinDsvr4JdzN0lA5p7xnRElxqgsJ86cauwJTkj3rhfLO9GPnWrIXT7nphmcT3Uf9XQE3MIKT7w0Ks8ShG9dijiFp1f6AMNzP6zXtmmwUGUkLy5bkMmwf3BFz
-					, answer='Example03
-					, question='Example03
-					, link='Example03
+					code='validCodeValue
+					, answer='trsmLuQ4tTBfNNUDSkONgboJIuTQrho5Q3kXve3YQE72X05RnhEhMSoEUDcXb4Tp4BAJL5xWZR9QhSBKsVFQjnRHCTlBHrfc8dv9ntvXyqAS1S83Fp4zKcio6egyM00n4g7nfDjowJrRvtf7C4mdyBhwc0yxHf2SFn0JqGwOd9k0cNXeKVBAZcURBtY2H6mSuWiBSjQGMWvKgZxNtHqQLBhjdu8rkY7i2MHC1y20fCRoG5kaLRCREzIC69wcvYw
+					, question='validQuestionValue
+					, link='validLinkValue
 				},
 		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
 	Respond{
 			methodType=application/json
 			requestHttpCode=200
-			elapsedTime=1525
+			elapsedTime=1896
 			headers=
-				Date=Mon, 22 Jul 2019 15:08:18 GMT
+				Date=Tue, 23 Jul 2019 07:23:11 GMT
 				Content-Type=application/json
 				Transfer-Encoding=chunked
 				Connection=keep-alive
@@ -918,7 +949,7 @@ $(document).ready(function() {
 			    &quot;question&quot;: &quot;validQuestionValue&quot;,
 			    &quot;link&quot;: &quot;validLinkValue&quot;
 			}
-		}</p><p>POST -- ElapsedTime: 1525</p></pre>
+		}</p><p>POST -- ElapsedTime: 1896</p></pre>
         </div>
       </div>
       </div>
@@ -930,51 +961,9 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-03</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-17" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-03 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">The <span class="argument">requestId-03</span> Http <span class="argument">200</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -995,13 +984,78 @@ $(document).ready(function() {
         
 
       </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">requestId-03</span> api response content will be <span class="argument">createFAQsResponse</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">requestId-03</span> response of FAQ object will come with the values: id: <span class="argument">anyValue</span>, code: <span class="argument">validCodeValue</span>, answer: <span class="argument">equalUpperLimit</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: The response of FAQ object will come with the values ERROR  Received: answer: 16 &amp; Expected answer ==: 255
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.faqObjectRespondValidation(FAQsSteps.java:121)
+	at &#10045;.The requestId-03 response of FAQ object will come with the values: id: anyValue, code: validCodeValue, answer: equalUpperLimit, question: validQuestionValue, link: validLinkValue(file:src/test/resources/features/FAQs/CreateFQAs.feature:46)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
       </div>
 </div>
 
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1013,13 +1067,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details ">
+    <div id="after-17" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1046,18 +1100,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">1.394</span>
+  <span class="lead-duration duration">2.027</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without answer</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max question length value</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1066,10 +1120,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details  in ">
+  <div id="element-18" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-19">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1081,13 +1135,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-20" class="inner-level collapse collapsable-details ">
+    <div id="before-19" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -1105,7 +1159,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1117,12 +1171,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">notSet</span>, question: <span class="argument">Example04</span>, link: <span class="argument">Example04</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">equalUpperLimit</span>, link: <span class="argument">validLinkValue</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1149,7 +1203,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Try to create the new FAQ <span class="argument">requestId-04</span></span>
   
-  <span class="lead-duration duration">1.392</span>
+  <span class="lead-duration duration">2.019</span>
 
 </div>
 
@@ -1164,30 +1218,30 @@ $(document).ready(function() {
         
   <div class="outputs inner-level">
           <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-22">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-21">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-22" class="collapse collapsable-details " >
+        <div id="output-21" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
 		Requested{
 			url='/v1/faqs,
 			headers=,
 			body='{
-					code='null
-					, answer='null
-					, question='Example04
-					, link='Example04
+					code='validCodeValue
+					, answer='validAnswerValue
+					, question='UuQnPywuCpplrhYd8eK4hiZMkD0mmmSDKQ0AxsxKU6nalefMiSfDLKUriwJmUrZehOZ4ZGoKlH2kfH2ssZebKMKlbkTOgVwkm7X0lHNogJFnDLOFXIxWXB3dQTapSdVvz7a6gbKyaUzcCQ5esa3E7RbYSFOCLzeFjP3Ts97YNWpSDlcjc6icQAIEnzK2ebUSBadpGJAhA89qglkT85eGC36IMWGw1a2wGGAlSiT7qZ5nF2oKwC65G95xIqNNs58
+					, link='validLinkValue
 				},
 		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
 	Respond{
 			methodType=application/json
 			requestHttpCode=200
-			elapsedTime=1348
+			elapsedTime=1996
 			headers=
-				Date=Mon, 22 Jul 2019 15:08:20 GMT
+				Date=Tue, 23 Jul 2019 07:23:13 GMT
 				Content-Type=application/json
 				Transfer-Encoding=chunked
 				Connection=keep-alive
@@ -1200,7 +1254,7 @@ $(document).ready(function() {
 			    &quot;question&quot;: &quot;validQuestionValue&quot;,
 			    &quot;link&quot;: &quot;validLinkValue&quot;
 			}
-		}</p><p>POST -- ElapsedTime: 1348</p></pre>
+		}</p><p>POST -- ElapsedTime: 1996</p></pre>
         </div>
       </div>
       </div>
@@ -1212,34 +1266,17 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-04</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
+  <span class="name">The <span class="argument">requestId-04</span> Http <span class="argument">200</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-23" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-04 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -1254,9 +1291,9 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">The <span class="argument">requestId-04</span> api response content will be <span class="argument">createFAQsResponse</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1265,6 +1302,46 @@ $(document).ready(function() {
         
 
         
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">requestId-04</span> response of FAQ object will come with the values: id: <span class="argument">anyValue</span>, code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">equalUpperLimit</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: The response of FAQ object will come with the values ERROR  Received: question: 18 &amp; Expected question ==: 255
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.faqObjectRespondValidation(FAQsSteps.java:131)
+	at &#10045;.The requestId-04 response of FAQ object will come with the values: id: anyValue, code: validCodeValue, answer: validAnswerValue, question: equalUpperLimit, link: validLinkValue(file:src/test/resources/features/FAQs/CreateFQAs.feature:46)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -1283,7 +1360,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1295,13 +1372,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-24" class="inner-level collapse collapsable-details ">
+    <div id="after-23" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.004</span>
 
           </div>
 
@@ -1328,18 +1405,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">1.507</span>
+  <span class="lead-duration duration">2.616</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-24">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null answer</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max link length value</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1348,10 +1425,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-25" class="collapse collapsable-details  in ">
+  <div id="element-24" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-25">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1363,13 +1440,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-26" class="inner-level collapse collapsable-details ">
+    <div id="before-25" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
@@ -1387,7 +1464,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-26">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1399,14 +1476,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-26" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">nullValue</span>, question: <span class="argument">Example05</span>, link: <span class="argument">Example05</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">equalUpperLimit</span></span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1431,7 +1508,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Try to create the new FAQ <span class="argument">requestId-05</span></span>
   
-  <span class="lead-duration duration">1.505</span>
+  <span class="lead-duration duration">2.607</span>
 
 </div>
 
@@ -1446,30 +1523,30 @@ $(document).ready(function() {
         
   <div class="outputs inner-level">
           <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-28">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-27">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-28" class="collapse collapsable-details " >
+        <div id="output-27" class="collapse collapsable-details " >
           
           <pre><p>POST ----- Executed: - 
 		Requested{
 			url='/v1/faqs,
 			headers=,
 			body='{
-					code='
-					, answer='
-					, question='Example05
-					, link='Example05
+					code='validCodeValue
+					, answer='validAnswerValue
+					, question='validQuestionValue
+					, link='N6n70e7uI09akYtvkoCnep7GyKDOdsE6eQLYkSkeHdZKc5a6LIF4Xk8HsChx7MSWfUufCX5jOK3W0qB82aHZMgb8dJBC3ycnqhRZmolKX6PStwgvhx5ktEjujcbwcJdnYg7LttjP5RxFc9DX7q3htWKW4kp8OoqkRqqgrR2GBFtG3AwX2q2rWX26JFVGffKDtcgfcCzv3OQ1wOS4cRODbAIF0kwhyTPcmy51vu0GXcoZ7lT2rxF2HEfcH88M8iIGlajJJezt6fjw9oTdVYrOZ4SlC6gBMrmtYGFXOwEzCfVK
 				},
 		multipartTextBody=
 		}</p><p>POST -----  Respond: - 
 	Respond{
 			methodType=application/json
 			requestHttpCode=200
-			elapsedTime=1477
+			elapsedTime=2576
 			headers=
-				Date=Mon, 22 Jul 2019 15:08:21 GMT
+				Date=Tue, 23 Jul 2019 07:23:15 GMT
 				Content-Type=application/json
 				Transfer-Encoding=chunked
 				Connection=keep-alive
@@ -1482,7 +1559,7 @@ $(document).ready(function() {
 			    &quot;question&quot;: &quot;validQuestionValue&quot;,
 			    &quot;link&quot;: &quot;validLinkValue&quot;
 			}
-		}</p><p>POST -- ElapsedTime: 1477</p></pre>
+		}</p><p>POST -- ElapsedTime: 2576</p></pre>
         </div>
       </div>
       </div>
@@ -1494,51 +1571,9 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-05</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-29" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-05 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">The <span class="argument">requestId-05</span> Http <span class="argument">200</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1559,229 +1594,39 @@ $(document).ready(function() {
         
 
       </div>
-      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">requestId-05</span> api response content will be <span class="argument">createFAQsResponse</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
 </div>
 
+        
 
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
+        
+
+
+        
+        
+
+        
+
+        
   
+        
 
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-30" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
-                        
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">requestId-05</span> response of FAQ object will come with the values: id: <span class="argument">anyValue</span>, code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">equalUpperLimit</span></span>
+  
   <span class="lead-duration duration">0.006</span>
 
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2341313088.html">@SmokeTest</a>
-           <a href="report-tag_2208754332.html">@FQAs</a>
-           <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
-      </div>
-
-  
-  <span class="lead-duration duration">1.712</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit answer</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-31" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-32" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.008</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-33">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-33" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">aboveUpperLimit</span>, question: <span class="argument">Example06</span>, link: <span class="argument">Example06</span></span>
-  
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ <span class="argument">requestId-06</span></span>
-  
-  <span class="lead-duration duration">1.709</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-34">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-34" class="collapse collapsable-details " >
-          
-          <pre><p>POST ----- Executed: - 
-		Requested{
-			url='/v1/faqs,
-			headers=,
-			body='{
-					code='m0iv5lP2kXAps1Ku86oJKki6XTVXeuKA94zsI5S8IwnRljD1dLQ4IQdCAwjwAJlP4BXgGBcg0tOBZaxTLxoIVmX8ipAnA2w56zJl0RGaXIMpL8eKP3ydiRpsRFDNsvN4Mjnnw1xTRqWsFxBmKMp4cFvQOx9BuygbMO1ZHbd87ksFZBFcsqcAfASA84RzMSdX8VIHyW4tmH3mzFCfPCBl79V63KMMusliYZNLkCx4pKSMpotOIkatEJtaviWe9olMFI0Xisf0galW6pHGZadzkArZyIAojhKawC7JfJl8XWy9Q
-					, answer='NHkNf3pIyFgHQ1DApokXSV7HzKa4wRsLjFMugauu7JlBmmuMHsziq3mJDbrAlK8lqB6x6G9MeGN5ktEBC6XQkO7b3FQ5hdyGpH1H4o9D7lvdJbQ0Ztb13fRu787Bih8xT1ji4Sy1a6D7djjUVJUprMWnPfhWVmnNKKCtE1WwfKYUNkaoU6n4tYVVISJbuIzrYZEclkn91fLOv42OdaWJWKjwl9Lj0PqdOJjRdLxSgNfjBBCfPxx3hjvijB3p1F2X
-					, question='Example06
-					, link='Example06
-				},
-		multipartTextBody=
-		}</p><p>POST -----  Respond: - 
-	Respond{
-			methodType=application/json
-			requestHttpCode=200
-			elapsedTime=1645
-			headers=
-				Date=Mon, 22 Jul 2019 15:08:23 GMT
-				Content-Type=application/json
-				Transfer-Encoding=chunked
-				Connection=keep-alive
-				Access-Control-Allow-Origin=*
-				Vary=Accept-Encoding
-			bodyContent='{
-			    &quot;id&quot;: &quot;validIdValue&quot;,
-			    &quot;code&quot;: &quot;validCodeValue&quot;,
-			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			    &quot;question&quot;: &quot;validQuestionValue&quot;,
-			    &quot;link&quot;: &quot;validLinkValue&quot;
-			}
-		}</p><p>POST -- ElapsedTime: 1645</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-06</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
 </div>
 
         
@@ -1790,45 +1635,18 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-35">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-35" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
+      <div id="msg-28" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: The response of FAQ object will come with the values ERROR  Received: link: 14 &amp; Expected link ==: 300
 	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-06 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
+	at com.gdt.bdd.stepDefinition.FAQmanagement.FAQsSteps.faqObjectRespondValidation(FAQsSteps.java:141)
+	at &#10045;.The requestId-05 response of FAQ object will come with the values: id: anyValue, code: validCodeValue, answer: validAnswerValue, question: validQuestionValue, link: equalUpperLimit(file:src/test/resources/features/FAQs/CreateFQAs.feature:46)
 </pre>
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
 
 
         
@@ -1847,7 +1665,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-29">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1859,13 +1677,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-36" class="inner-level collapse collapsable-details ">
+    <div id="after-29" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.004</span>
 
           </div>
 
@@ -1892,18 +1710,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">1.226</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-37">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-30">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without question</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with valid basic values</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1912,10 +1730,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-37" class="collapse collapsable-details  in ">
+  <div id="element-30" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-31">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1927,225 +1745,11 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-38" class="inner-level collapse collapsable-details ">
+    <div id="before-31" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.013</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-39">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-39" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">Example07</span>, question: <span class="argument">notSet</span>, link: <span class="argument">Example07</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ <span class="argument">requestId-07</span></span>
-  
-  <span class="lead-duration duration">1.225</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-40">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-40" class="collapse collapsable-details " >
-          
-          <pre><p>POST ----- Executed: - 
-		Requested{
-			url='/v1/faqs,
-			headers=,
-			body='{
-					code='null
-					, answer='Example07
-					, question='null
-					, link='Example07
-				},
-		multipartTextBody=
-		}</p><p>POST -----  Respond: - 
-	Respond{
-			methodType=application/json
-			requestHttpCode=200
-			elapsedTime=1202
-			headers=
-				Date=Mon, 22 Jul 2019 15:08:25 GMT
-				Content-Type=application/json
-				Transfer-Encoding=chunked
-				Connection=keep-alive
-				Access-Control-Allow-Origin=*
-				Vary=Accept-Encoding
-			bodyContent='{
-			    &quot;id&quot;: &quot;validIdValue&quot;,
-			    &quot;code&quot;: &quot;validCodeValue&quot;,
-			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			    &quot;question&quot;: &quot;validQuestionValue&quot;,
-			    &quot;link&quot;: &quot;validLinkValue&quot;
-			}
-		}</p><p>POST -- ElapsedTime: 1202</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-07</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-41">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-41" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-07 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-42" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
   <span class="lead-duration duration">0.001</span>
 
@@ -2162,78 +1766,10 @@ $(document).ready(function() {
           </div>
   </div>
 
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2341313088.html">@SmokeTest</a>
-           <a href="report-tag_2208754332.html">@FQAs</a>
-           <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
-      </div>
-
-  
-  <span class="lead-duration duration">0.933</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null question</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-43" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-44" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.017</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-45">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -2245,12 +1781,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-45" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">Example08</span>, question: <span class="argument">nullValue</span>, link: <span class="argument">Example08</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2273,118 +1809,84 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ <span class="argument">requestId-08</span></span>
-  
-  <span class="lead-duration duration">0.932</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-46">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-46" class="collapse collapsable-details " >
-          
-          <pre><p>POST ----- Executed: - 
-		Requested{
-			url='/v1/faqs,
-			headers=,
-			body='{
-					code='
-					, answer='Example08
-					, question='
-					, link='Example08
-				},
-		multipartTextBody=
-		}</p><p>POST -----  Respond: - 
-	Respond{
-			methodType=application/json
-			requestHttpCode=200
-			elapsedTime=921
-			headers=
-				Date=Mon, 22 Jul 2019 15:08:26 GMT
-				Content-Type=application/json
-				Transfer-Encoding=chunked
-				Connection=keep-alive
-				Access-Control-Allow-Origin=*
-				Vary=Accept-Encoding
-			bodyContent='{
-			    &quot;id&quot;: &quot;validIdValue&quot;,
-			    &quot;code&quot;: &quot;validCodeValue&quot;,
-			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			    &quot;question&quot;: &quot;validQuestionValue&quot;,
-			    &quot;link&quot;: &quot;validLinkValue&quot;
-			}
-		}</p><p>POST -- ElapsedTime: 921</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-08</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-47">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-47" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-08 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: validCodeValue, answer: validAnswerValue, question: validQuestionValue, link: validLinkValue</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The api response content will be createFAQsResponse</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The response of FAQ object will come with the values: id: anyValue, code: validCodeValue, answer: validAnswerValue, question: validQuestionValue, link: validLinkValue</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2411,7 +1913,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-33">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2423,289 +1925,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-48" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.001</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2341313088.html">@SmokeTest</a>
-           <a href="report-tag_2208754332.html">@FQAs</a>
-           <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
-      </div>
-
-  
-  <span class="lead-duration duration">0.952</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-49">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit question</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-49" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-50">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-50" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.002</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-51">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-51" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example09</span>, question: <span class="argument">aboveUpperLimit</span>, link: <span class="argument">Example09</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ <span class="argument">requestId-09</span></span>
-  
-  <span class="lead-duration duration">0.950</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-52">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-52" class="collapse collapsable-details " >
-          
-          <pre><p>POST ----- Executed: - 
-		Requested{
-			url='/v1/faqs,
-			headers=,
-			body='{
-					code='jGDUK4sfX3e2zEpkapBb8eJZZ7YpCqrvRg3hMt40wzUDm6IqxRxK1jjen1mJdxkZuQCYeQLrQelWW5klKvoQiy4GGNQGGfWKw9Mmqu9anReqKwrVb1tjhU3Njmdjjixd3SpzXLz48TSJQrFj4ovECuZDzeTjD66bUE9KjPN7CVTKx9IzNX5fXuhMTanvKjea0KwfL2cwkjrrnQr3SZG4LlyKE2141bgxB02gua4fheI9m8QD3ehkaQEBLpDQYQ5n8RZl8VKqVqoahmddvGZJo1p1D8REbJyisQtzS44Vja9U3
-					, answer='Example09
-					, question='pGBXCpUDbbjt8oC1C5Or5zANqJtr4ujhuWaZpouIzj4POYqFW5EQ8wJ9UrJIIOdqnLN1w5YdAcVLgTd76hOmRIiYt6FgG8RLY7Nd0O8rpff4hI9DyNg8IxfsmjT5ytcisNO7iUACyqQVF9mfvTutvLOsqVgD1IKEIfuf2nRWS23dvQoN0MVuVyBHDTPuyyzr45vgROKb2pz5fK0EYjm9De6waW2wBGDTXsRqtf4XNo6WRB3GS62Grw6e8ASkbKO9
-					, link='Example09
-				},
-		multipartTextBody=
-		}</p><p>POST -----  Respond: - 
-	Respond{
-			methodType=application/json
-			requestHttpCode=200
-			elapsedTime=935
-			headers=
-				Date=Mon, 22 Jul 2019 15:08:26 GMT
-				Content-Type=application/json
-				Transfer-Encoding=chunked
-				Connection=keep-alive
-				Access-Control-Allow-Origin=*
-				Vary=Accept-Encoding
-			bodyContent='{
-			    &quot;id&quot;: &quot;validIdValue&quot;,
-			    &quot;code&quot;: &quot;validCodeValue&quot;,
-			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			    &quot;question&quot;: &quot;validQuestionValue&quot;,
-			    &quot;link&quot;: &quot;validLinkValue&quot;
-			}
-		}</p><p>POST -- ElapsedTime: 935</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-09</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-53">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-53" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-09 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-54">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-54" class="inner-level collapse collapsable-details ">
+    <div id="after-33" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -2738,18 +1958,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">0.944</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-55">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-34">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ without link</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max code length value</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2758,10 +1978,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-55" class="collapse collapsable-details  in ">
+  <div id="element-34" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-56">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-35">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2773,7 +1993,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-56" class="inner-level collapse collapsable-details ">
+    <div id="before-35" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2797,7 +2017,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-57">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-36">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -2809,12 +2029,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-57" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-36" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">notSet</span>, answer: <span class="argument">Example10</span>, question: <span class="argument">Example10</span>, link: <span class="argument">notSet</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2837,118 +2057,84 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ <span class="argument">requestId-10</span></span>
-  
-  <span class="lead-duration duration">0.942</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-58">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-58" class="collapse collapsable-details " >
-          
-          <pre><p>POST ----- Executed: - 
-		Requested{
-			url='/v1/faqs,
-			headers=,
-			body='{
-					code='null
-					, answer='Example10
-					, question='Example10
-					, link='null
-				},
-		multipartTextBody=
-		}</p><p>POST -----  Respond: - 
-	Respond{
-			methodType=application/json
-			requestHttpCode=200
-			elapsedTime=933
-			headers=
-				Date=Mon, 22 Jul 2019 15:08:27 GMT
-				Content-Type=application/json
-				Transfer-Encoding=chunked
-				Connection=keep-alive
-				Access-Control-Allow-Origin=*
-				Vary=Accept-Encoding
-			bodyContent='{
-			    &quot;id&quot;: &quot;validIdValue&quot;,
-			    &quot;code&quot;: &quot;validCodeValue&quot;,
-			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			    &quot;question&quot;: &quot;validQuestionValue&quot;,
-			    &quot;link&quot;: &quot;validLinkValue&quot;
-			}
-		}</p><p>POST -- ElapsedTime: 933</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-10</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-59">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-59" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-10 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: equalUpperLimit, answer: validAnswerValue, question: validQuestionValue, link: validLinkValue</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The api response content will be createFAQsResponse</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The response of FAQ object will come with the values: id: anyValue, code: equalUpperLimit, answer: validAnswerValue, question: validQuestionValue, link: validLinkValue</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2975,7 +2161,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-60">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-37">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2987,13 +2173,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-60" class="inner-level collapse collapsable-details ">
+    <div id="after-37" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -3020,18 +2206,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">1.639</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-61">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-38">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with null link</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max answer length value</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -3040,10 +2226,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-61" class="collapse collapsable-details  in ">
+  <div id="element-38" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-62">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-39">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3055,13 +2241,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-62" class="inner-level collapse collapsable-details ">
+    <div id="before-39" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -3079,7 +2265,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-63">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-40">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -3091,12 +2277,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-63" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-40" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">nullValue</span>, answer: <span class="argument">Example11</span>, question: <span class="argument">Example11</span>, link: <span class="argument">nullValue</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -3119,118 +2305,84 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ <span class="argument">requestId-11</span></span>
-  
-  <span class="lead-duration duration">1.638</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-64">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-64" class="collapse collapsable-details " >
-          
-          <pre><p>POST ----- Executed: - 
-		Requested{
-			url='/v1/faqs,
-			headers=,
-			body='{
-					code='
-					, answer='Example11
-					, question='Example11
-					, link='
-				},
-		multipartTextBody=
-		}</p><p>POST -----  Respond: - 
-	Respond{
-			methodType=application/json
-			requestHttpCode=200
-			elapsedTime=1604
-			headers=
-				Date=Mon, 22 Jul 2019 15:08:29 GMT
-				Content-Type=application/json
-				Transfer-Encoding=chunked
-				Connection=keep-alive
-				Access-Control-Allow-Origin=*
-				Vary=Accept-Encoding
-			bodyContent='{
-			    &quot;id&quot;: &quot;validIdValue&quot;,
-			    &quot;code&quot;: &quot;validCodeValue&quot;,
-			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			    &quot;question&quot;: &quot;validQuestionValue&quot;,
-			    &quot;link&quot;: &quot;validLinkValue&quot;
-			}
-		}</p><p>POST -- ElapsedTime: 1604</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-11</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-65">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-65" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-11 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: validCodeValue, answer: equalUpperLimit, question: validQuestionValue, link: validLinkValue</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The api response content will be createFAQsResponse</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The response of FAQ object will come with the values: id: anyValue, code: validCodeValue, answer: equalUpperLimit, question: validQuestionValue, link: validLinkValue</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -3257,7 +2409,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-66">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-41">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3269,13 +2421,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-66" class="inner-level collapse collapsable-details ">
+    <div id="after-41" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -3302,18 +2454,18 @@ $(document).ready(function() {
            <a href="report-tag_2341313088.html">@SmokeTest</a>
            <a href="report-tag_2208754332.html">@FQAs</a>
            <a href="report-tag_2173983160.html">@CreateFQAs</a>
-           <a href="report-tag_3525854290.html">@CreateFQAsRestriction</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
       </div>
 
   
-  <span class="lead-duration duration">1.427</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-67">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-42">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsuccessful create a FAQ when the FAQ from have: Try to create a FAQ with aboveUpperLimit link</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max question length value</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -3322,10 +2474,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-67" class="collapse collapsable-details  in ">
+  <div id="element-42" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-68">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-43">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3337,13 +2489,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-68" class="inner-level collapse collapsable-details ">
+    <div id="before-43" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioContext.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -3361,7 +2513,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-69">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-44">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -3373,12 +2525,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-69" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-44" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The FAQ from with the data: code: <span class="argument">aboveUpperLimit</span>, answer: <span class="argument">Example12</span>, question: <span class="argument">Example12</span>, link: <span class="argument">aboveUpperLimit</span></span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -3401,118 +2553,84 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Try to create the new FAQ <span class="argument">requestId-12</span></span>
-  
-  <span class="lead-duration duration">1.426</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-  <div class="outputs inner-level">
-          <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-70">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-70" class="collapse collapsable-details " >
-          
-          <pre><p>POST ----- Executed: - 
-		Requested{
-			url='/v1/faqs,
-			headers=,
-			body='{
-					code='wwbqL7Ub7nOSl2WCtGRZ75a0OhPEkBhoZFUX3enkx7YON52cMniNBBZWcE0Rv7u3s7yeeUwcr9bjMhVwWZBjkcbAkTB5YkVDrThDyGmEg6Tnp50FixOGlKR2tpxBqRweUjRiXUxEaFWlRslUOFZwZlZI1Z5uqFwBstIUHLXLMS9Fvl7QGJpzXmhtGtkEqbLMuJP93WPSyw54K5Ml1AzQgCh5C9rLlheZinnIB7laqAJ3ZpcEFs2FUdhgCbYfh0Bfqfqq9DLMFcSK43mNwQYEpsLREQSUATOaQQQbXd4Zqp5kF
-					, answer='Example12
-					, question='Example12
-					, link='yLEwpaOMI1Ll5hvJD9SSYZi9xyEaG6G3L9pK0BWJtWYdJvcnBooet00JEtBAWp66MsGX5rKELpAef3UzGNjoZVntQSx24d9xFvB3i7FjZFAe9Wbl0eZJro1wqSNPyY7BT5GiKbv3oTsqtF5lc0cKYVHgWOlFfOJ0LYVTHT3HBnGJDga1ezYvcCvavkhrbPHIHbWH1SLqD6vVuCOWQSFAhCnPJBTmHmrZG9QmbBSAaHTRdzD9DaOGmM8cH49jqoczk9Np5yXH35vnDfA4M12c8lbTQtzwLR2nola6CdzpopawH
-				},
-		multipartTextBody=
-		}</p><p>POST -----  Respond: - 
-	Respond{
-			methodType=application/json
-			requestHttpCode=200
-			elapsedTime=1409
-			headers=
-				Date=Mon, 22 Jul 2019 15:08:30 GMT
-				Content-Type=application/json
-				Transfer-Encoding=chunked
-				Connection=keep-alive
-				Access-Control-Allow-Origin=*
-				Vary=Accept-Encoding
-			bodyContent='{
-			    &quot;id&quot;: &quot;validIdValue&quot;,
-			    &quot;code&quot;: &quot;validCodeValue&quot;,
-			    &quot;answer&quot;: &quot;validAnswerValue&quot;,
-			    &quot;question&quot;: &quot;validQuestionValue&quot;,
-			    &quot;link&quot;: &quot;validLinkValue&quot;
-			}
-		}</p><p>POST -- ElapsedTime: 1409</p></pre>
-        </div>
-      </div>
-      </div>
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The <span class="argument">requestId-12</span> Http <span class="argument">503</span> API code will be received in less than <span class="argument">envMaxTimeoutForRespond</span> milliseconds</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-71">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-71" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError:  Bad Http Code - Received: 200 &amp; Expected: 503 expected:&lt;503&gt; but was:&lt;200&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at com.gdt.bdd.stepDefinition.common.ApiCommonValidations.the_api_response_is(ApiCommonValidations.java:48)
-	at &#10045;.The requestId-12 Http 503 API code will be received in less than envMaxTimeoutForRespond milliseconds(file:src/test/resources/features/FAQs/CreateFQAs.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief undefined">
   <span class="keyword indention">And</span>
-  <span class="name">The api message error code will be <span class="argument">401</span></span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: validCodeValue, answer: validAnswerValue, question: equalUpperLimit, link: validLinkValue</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The api response content will be createFAQsResponse</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The response of FAQ object will come with the values: id: anyValue, code: validCodeValue, answer: validAnswerValue, question: equalUpperLimit, link: validLinkValue</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -3539,7 +2657,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3551,13 +2669,261 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-72" class="inner-level collapse collapsable-details ">
+    <div id="after-45" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioContext.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2341313088.html">@SmokeTest</a>
+           <a href="report-tag_2208754332.html">@FQAs</a>
+           <a href="report-tag_2173983160.html">@CreateFQAs</a>
+           <a href="report-tag_4279618866.html">@CreateFQAsSuccessful</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Successful create a FAQ when the FAQ from have: Create a FAQ with max link length value</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-47">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-47" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioContext.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.004</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-48">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-48" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The FAQ from with the data: code: <span class="argument">validCodeValue</span>, answer: <span class="argument">validAnswerValue</span>, question: <span class="argument">validQuestionValue</span>, link: <span class="argument">validLinkValue</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">Try to create the new FAQ</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">When</span>
+  <span class="name">Try to updated the FAQ with the values: id: anyone, code: validCodeValue, answer: validAnswerValue, question: validQuestionValue, link: equalUpperLimit</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The api response content will be createFAQsResponse</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">The response of FAQ object will come with the values: id: anyValue, code: validCodeValue, answer: validAnswerValue, question: validQuestionValue, link: equalUpperLimit</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-49">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-49" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioContext.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 

@@ -40,18 +40,18 @@ Feature: FQAs Manager - CreateFQAs Resource - Validation
     #-------------------------------- Check PUT of faqs Successful validation
   Scenario Outline: Successful create a FAQ when the FAQ from have: <objectOfTest>
     Given The FAQ from with the data: code: <code>, answer: <answer>, question: <question>, link: <link>
-    When Try to create the new FAQ
-    Then The Http <httpCode> API code will be received in less than envMaxTimeoutForRespond milliseconds
-    And The api response content will be createFAQsResponse
-    And The response of FAQ object will come with the values: id: anyValue, code: <code>, answer: <answer>, question: <question>, link: <link>
+    When Try to create the new FAQ <requestId>
+    Then The <requestId> Http <httpCode> API code will be received in less than envMaxTimeoutForRespond milliseconds
+    And The <requestId> api response content will be createFAQsResponse
+    And The <requestId> response of FAQ object will come with the values: id: anyValue, code: <code>, answer: <answer>, question: <question>, link: <link>
 
     Examples:
-      | objectOfTest                                | code            | answer           | question           | link            | httpCode |
-      | Create a FAQ with valid basic values        | validCodeValue  | validAnswerValue | validQuestionValue | validLinkValue  | 200      |
-      | Create a FAQ with max code length value     | equalUpperLimit | validAnswerValue | validQuestionValue | validLinkValue  | 200      |
-      | Create a FAQ with max answer length value   | validCodeValue  | equalUpperLimit  | validQuestionValue | validLinkValue  | 200      |
-      | Create a FAQ with max question length value | validCodeValue  | validAnswerValue | equalUpperLimit    | validLinkValue  | 200      |
-      | Create a FAQ with max link length value     | validCodeValue  | validAnswerValue | validQuestionValue | equalUpperLimit | 200      |
+      | objectOfTest                                | requestId    | code            | answer           | question           | link            | httpCode |
+      | Create a FAQ with valid basic values        | requestId-01 | validCodeValue  | validAnswerValue | validQuestionValue | validLinkValue  | 200      |
+      | Create a FAQ with max code length value     | requestId-02 | equalUpperLimit | validAnswerValue | validQuestionValue | validLinkValue  | 200      |
+      | Create a FAQ with max answer length value   | requestId-03 | validCodeValue  | equalUpperLimit  | validQuestionValue | validLinkValue  | 200      |
+      | Create a FAQ with max question length value | requestId-04 | validCodeValue  | validAnswerValue | equalUpperLimit    | validLinkValue  | 200      |
+      | Create a FAQ with max link length value     | requestId-05 | validCodeValue  | validAnswerValue | validQuestionValue | equalUpperLimit | 200      |
 
   @UpdateFQAsRestriction
     #-------------------------------- Check POST of faqs restrictions

@@ -36,7 +36,7 @@ import static net.masterthought.cucumber.presentation.PresentationMode.RUN_WITH_
 				//Used only if you want run a specific feature by tag : @userManagement, @search or @filter
 
 
-				tags = {"@CreateFQAsRestriction"},
+				tags = {"@CreateFQAsSuccessful"},
                  //   tags = {"@GetUsersRestriction"},
 
 				

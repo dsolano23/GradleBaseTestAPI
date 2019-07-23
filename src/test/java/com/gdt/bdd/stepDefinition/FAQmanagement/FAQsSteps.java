@@ -5,8 +5,12 @@ import com.gdt.enviroment.ScenarioContext;
 import com.gdt.models.beans.FAQsDto;
 import com.gdt.models.controllers.FAQsController;
 import com.gdt.models.faqs.CreateFAQsRequest;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import io.restassured.response.Response;
+import org.junit.Assert;
+import utils.CucumberConstants;
 import utils.CucumberDataManagement;
 
 public class FAQsSteps {
@@ -83,15 +87,14 @@ public class FAQsSteps {
         environment.put(ScenarioContext.HTTP_STATUS_CODE, standardResponse.getRawResponse().getRequestHttpCode());
         environment.put(ScenarioContext.HTTP_ELAPSED_TIME_RESPOND, standardResponse.getRawResponse().getElapsedTime());
         environment.put(FAQsController.FAQ_RESPONSE, standardResponse);
-    }
+    }*/
 
-    @And("^The response of FAQ object will come with the values: id: (.+), code: (.+), answer: (.+), question: (.+), link: (.+)$")
-    public void faqObjectRespondValidation(String id, String code, String answer, String question, String link) throws Throwable {
-        Object responseObject = null;
+    @And("^The (.+) response of FAQ object will come with the values: id: (.+), code: (.+), answer: (.+), question: (.+), link: (.+)$")
+    public void faqObjectRespondValidation(String requestId,String id, String code, String answer, String question, String link) throws Throwable {
+        Response responseReceived = scenarioContext.getRestAssuredResponse(requestId);
         FAQsDto faQsDtoRecied = new FAQsDto();
-        responseObject = environment.get(FAQsController.FAQ_RESPONSE);
-        if (responseObject != null && responseObject instanceof StandardResponse && ((StandardResponse) responseObject).getFilterResponse() instanceof FAQsDto) {
-            faQsDtoRecied = (FAQsDto) ((StandardResponse) responseObject).getFilterResponse();
+        if (responseReceived != null) {
+            faQsDtoRecied = responseReceived.getBody().as(FAQsDto.class);
         }
 
         String resultExpected = id;
@@ -140,6 +143,6 @@ public class FAQsSteps {
             assertTrace = "The response of FAQ object will come with the values ERROR  Received: link: " + resultReceived +" & Expected link: " + resultExpected;
             Assert.assertEquals(assertTrace, resultExpected, resultReceived);
         }
-    }*/
+    }
 
 }

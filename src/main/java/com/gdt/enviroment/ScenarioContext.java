@@ -1,11 +1,13 @@
 package com.gdt.enviroment;
 
+import com.gdt.baseClient.beans.RestIterationDto;
 import com.gdt.baseClient.client.RestAssuredClient;
 import com.gdt.exception.NotFoundResourceException;
 
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
+import io.restassured.response.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -87,5 +89,13 @@ public class ScenarioContext {
 	public synchronized Object get(String key) {
 		return stepDataMap.get(key);
 	}
+
+    public Response getRestAssuredResponse(String key) {
+        Response response = null;
+        if (this.stepDataMap.get(key) != null && this.stepDataMap.get(key) instanceof RestIterationDto){
+            response = ((RestIterationDto) this.stepDataMap.get(key)).getResponse();
+        }
+        return response;
+    }
 
 }

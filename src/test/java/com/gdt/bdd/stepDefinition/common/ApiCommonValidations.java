@@ -12,6 +12,7 @@ import com.gdt.utilsType.EnvPropertiesManagement;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.restassured.response.Response;
 import org.junit.Assert;
 import utils.CucumberConstants;
 
@@ -35,17 +36,14 @@ public class ApiCommonValidations {
 
         Long elapsedTimeExpected = null;
 
-        Object oResp = scenarioContext.get(requestId);
-        RestIterationDto restIterationDto=null;
-        if (oResp != null && oResp instanceof RestIterationDto) {
-            restIterationDto = (RestIterationDto) oResp;
-        }else {
-            Assert.fail("DON'T HAVE A RestIterationDto respond valid");
+        Response responseReceived = scenarioContext.getRestAssuredResponse(requestId);
 
+        if (responseReceived == null) {
+            Assert.fail("DON'T HAVE A RestIterationDto respond valid");
         }
 
-        String assertTrace = " Bad Http Code - Received: " + restIterationDto.getResponse().getStatusCode() + " & Expected: " + httpCodeExpected;
-        Assert.assertEquals(assertTrace, httpCodeExpected, restIterationDto.getResponse().getStatusCode());
+        String assertTrace = " Bad Http Code - Received: " + responseReceived.getStatusCode() + " & Expected: " + httpCodeExpected;
+        Assert.assertEquals(assertTrace, httpCodeExpected, responseReceived.getStatusCode());
 
         if(elapsedTime.equalsIgnoreCase(CucumberConstants.ENVIROMENT_MAX_TIMEOUT_FOR_RESPOND)){
             elapsedTimeExpected = Long.parseLong(envMaxTimeForRespond);
@@ -53,8 +51,30 @@ public class ApiCommonValidations {
             elapsedTimeExpected = Long.parseLong(elapsedTime);
         }
 
-        assertTrace = " Bad max timeout - Received: " + restIterationDto.getResponse().getTime() + " & Expected <: " + elapsedTimeExpected;
-        Assert.assertTrue(assertTrace, restIterationDto.getResponse().getTime() < elapsedTimeExpected);
+        assertTrace = " Bad max timeout - Received: " + responseReceived.getTime() + " & Expected <: " + elapsedTimeExpected;
+        Assert.assertTrue(assertTrace, responseReceived.getTime() < elapsedTimeExpected);
+    }
+
+    @And("^The (.+) api response content will be (.+)$")
+    public void the_api_response_content_will_be(String requestId, String resultExpected) throws Throwable {
+        String resultReceived = "BAD TYPE OF RESPONSE";
+        Object responseObject = scenarioContext.get(requestId);
+        switch (resultExpected) {
+
+            case FAQsController.FAQ_RESPONSE:
+
+
+                if (responseObject != null && responseObject instanceof RestIterationDto) {
+                    FAQsDto faQsDto = ((RestIterationDto) responseObject).getResponse().getBody().as(FAQsDto.class);
+                    if (faQsDto != null) {
+                        resultReceived = FAQsController.FAQ_RESPONSE;
+                    }
+                    break;
+                }
+
+                String assertTrace = " The api response content will be ERROR  Received: " + resultReceived + " & Expected: " + resultExpected;
+                Assert.assertEquals(assertTrace, resultExpected, resultReceived);
+        }
     }
 
     @And("^The api message error code will be (\\d+)$")
@@ -99,30 +119,6 @@ public class ApiCommonValidations {
             errorCodeResultReceived = (Integer) oResp;
         }
         Assert.assertEquals(assertTrace, errorCodeResultExpected, errorCodeResultReceived);
-    }
-
-    @And("^The api response content will be (.+)$")
-    public void the_api_response_content_will_be(String resultExpected) throws Throwable {
-        Scenario scenario = scenarioContext.getScenario();
-        String resultReceived = "BAD TYPE OF RESPONSE";
-        Object responseObject = null;
-        switch (resultExpected) {
-
-            case FAQsController.FAQ_RESPONSE:
-                responseObject = scenarioContext.get(FAQsController.FAQ_RESPONSE);
-
-                if (responseObject != null && responseObject instanceof RestIterationDto) {
-                    FAQsDto faQsDto = ((RestIterationDto) responseObject).getResponse().getBody().as(FAQsDto.class);
-                    if (faQsDto != null) {
-                        resultReceived = FAQsController.FAQ_RESPONSE;
-                    }
-                    break;
-
-                }
-
-                String assertTrace = " The api response content will be ERROR  Received: " + resultReceived + " & Expected: " + resultExpected;
-                Assert.assertEquals(assertTrace, resultExpected, resultReceived);
-        }
     }
 }
 
