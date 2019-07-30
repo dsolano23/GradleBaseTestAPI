@@ -2,42 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="298bba4c-fffa-4a88-ad88-17f9f90d91c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/gdt/enviroment/ScenarioContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/gdt/enviroment/ScenarioContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/gdt/bdd/runner/BDDTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/gdt/bdd/runner/BDDTestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/gdt/bdd/stepDefinition/common/ApiCommonValidations.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/gdt/bdd/stepDefinition/common/ApiCommonValidations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/FQAs#20Manager#20-#20CreateFQAs#20Resource#20-#20Validation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.gdt.bdd.runner.BDDTestRunner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.gdt.bdd.runner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/features/FAQs/CreateFQAs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/features/FAQs/CreateFQAs.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-FQAs#20Manager#20-#20CreateFQAs#20Resource#20-#20Validation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.gdt.bdd.runner.BDDTestRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/enviroment/qaEnv.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdt/enviroment/ScenarioContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdt/enviroment/ScenarioContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/gdt/bdd/runner/BDDTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gdt/bdd/runner/BDDTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/common/ApiCommonValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/common/ApiCommonValidations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/FAQs/CreateFQAs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/FAQs/CreateFQAs.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RestTestApi-out-17-07-2019.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/enviroment/qaEnv.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/enviroment/cuaEnv.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RestTestApi-out-18-07-2019.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RestTestApi-out.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/RestTestApi-out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
@@ -49,10 +35,38 @@
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_2341313088.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_2341313088.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_4279618866.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_4279618866.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.idea/gradle.xml" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.idea/workspace.xml" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/classes/java/test/com/gdt/bdd/runner/BDDTestRunner.class" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/classes/java/test/com/gdt/bdd/runner/BDDTestRunner.class" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/resources/test/enviroment/qaEnv.properties" beforeDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/java/com/gdt/bdd/runner/BDDTestRunner.java" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/java/com/gdt/bdd/runner/BDDTestRunner.java" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/resources/enviroment/qaEnv.properties" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/resources/enviroment/cuaEnv.properties" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/RestTestApi-out-18-07-2019.log" beforeDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/RestTestApi-out.log" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/RestTestApi-out.log" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-feature_4041927134.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-feature_4041927134.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_2173983160.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_2173983160.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_2208754332.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_2208754332.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_2341313088.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_2341313088.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_4279618866.html" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber-html-reports/report-tag_4279618866.html" afterDir="false" />
+      <change beforePath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber.json" beforeDir="false" afterPath="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/target/cucumber.json" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +76,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
-    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -128,93 +141,6 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/common/ApiCommonValidations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="121" column="5" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/FAQs/CreateFQAs.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/bdd/runner/BDDTestRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/enviroment/ScenarioContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RestIterationDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/enviroment/developEnv.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -228,170 +154,10 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/resources/features/FAQs/CreateFQAsRestriction.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/controllers/FAQsControler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/FAQsDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/models/StandarResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/models/StandardResponse.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsActions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/CucumberDataManagement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/faqs/CreateFAQsResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/beans/FAQsDto.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/CucumberConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/enviroment/EnvironmentConstantsNames.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/enviroment/TestEnvironment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/faqs/UpdateFAQsResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/faqs/UpdateFAQsRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/HttpClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/BaseHttpClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/BaseClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/SprintAssuredClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestRestAssuredDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/ApacheHttpClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/HTTPUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/constants/HttpHeadersEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/clients/RestAssuredClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestModelDtoOld.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/ResquestModelDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestModelDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/clients/BaseStepsImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/ResponseModelDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/BaseStepsImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/AbstractBaseJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/ICollectionJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/utils/DeserializationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/BasePageableJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestSpecificationDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/BaseRequestDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/constants/EnumStatusFamily.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/controllers/AbstractBasicController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gdt/unitTest/httpClientTest/BasicFunctionalityTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/exception/beans/ErrorDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/faqs/CreateFAQsRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/RestAssuredClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RestIterationDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/models/controllers/FAQsController.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/enviroment/developEnv.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gdt/bdd/runner/BDDTestRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/FAQs/CreateFQAs.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gdt/enviroment/ScenarioContext.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/common/ApiCommonValidations.java" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="-2" />
-    <option name="width" value="1853" />
-    <option name="height" value="1082" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RestTestApi" type="58d84e3e:PackageViewProjectNode" />
-              <item name="RestTestApi" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="58d84e3e:PackageViewProjectNode" />
-              <item name="RestTestApi" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="RestTestApi.main" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="58d84e3e:PackageViewProjectNode" />
-              <item name="RestTestApi" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="RestTestApi.test" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gdt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gdt" type="462c0819:PsiDirectoryNode" />
-              <item name="baseClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestTestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBaseTestAPI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1OjBaCrucgnzmN5hMkq4YJFXBML" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
@@ -529,21 +295,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BDDTestRunner - 2019.07.22 at 16h 14m 42s.xml">
-      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BDDTestRunner - 2019.07.22 at 16h 19m 11s.xml">
-      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BDDTestRunner - 2019.07.22 at 16h 33m 53s.xml">
-      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BDDTestRunner - 2019.07.22 at 16h 34m 38s.xml">
-      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BDDTestRunner - 2019.07.22 at 17h 04m 00s.xml">
-      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="BDDTestRunner - 2019.07.22 at 17h 08m 32s.xml">
       <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -559,38 +310,34 @@
     <history-entry file="BDDTestRunner - 2019.07.23 at 09h 23m 18s.xml">
       <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="BDDTestRunner - 2019.07.23 at 18h 12m 14s.xml">
+      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BDDTestRunner - 2019.07.24 at 08h 45m 39s.xml">
+      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BDDTestRunner - 2019.07.24 at 13h 13m 11s.xml">
+      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BDDTestRunner - 2019.07.24 at 13h 14m 32s.xml">
+      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BDDTestRunner - 2019.07.24 at 13h 14m 48s.xml">
+      <configuration name="BDDTestRunner" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="-2" width="1853" height="1082" extended-state="6" />
-    <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.15605977" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32004198" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5002767" side_tool="true" weight="0.49568033" />
-      <window_info anchor="bottom" id="Build" order="2" weight="0.30115426" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4997233" weight="0.49568033" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39979014" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Gradle" order="0" weight="0.32977587" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32977587" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -598,7 +345,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gdt/models/faqs/CreateFAQsResponse.java</url>
           <line>14</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -657,332 +403,6 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/CucumberConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="92" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/CucumberDataManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.9/88c1ea157c2a2aa51e24f6a916226e72a0c98e05/httpclient-4.5.9-sources.jar!/org/apache/http/client/config/RequestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/response/ResponseBodyExtractionOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.11/95167d269607b358ba3ed7030ccd336dad8591a0/httpcore-4.4.11-sources.jar!/org/apache/http/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/models/beans/FAQsDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/config/HttpClientConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1537">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/config/RestAssuredConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1711">
-          <caret line="355" column="29" selection-start-line="355" selection-start-column="29" selection-end-line="355" selection-end-column="29" />
-          <folding>
-            <element signature="e#19229#19230#0" expanded="true" />
-            <element signature="e#19256#19257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.11/95167d269607b358ba3ed7030ccd336dad8591a0/httpcore-4.4.11-sources.jar!/org/apache/http/message/AbstractHttpMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/unitTest/runner/UnitTestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/HTTPUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestRestAssuredDto.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/BaseClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/ApacheHttpClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/clients/BaseStepsImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/ResponseModelDto.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/ObjectErrorDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/ObjectErrorsDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestModelDtoOld.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/RestLink.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/models/BadBodyRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/models/StandardResponse.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/AbstractBaseJson.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/ICollectionJson.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/models/controllers/AbstractBasicController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/constants/HttpHeadersEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/utils/DeserializationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/specification/RequestSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7245">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/exception/beans/BaseDt0.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/constants/EnumStatusFamily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/exception/beans/ErrorDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/response/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/http/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/http/Headers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RequestDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/models/faqs/CreateFAQsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/response/ResponseOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="53" column="11" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/response/ResponseBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/unitTest/httpClientTest/BasicFunctionalityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/BasePageableJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/client/RestAssuredClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
-          <folding>
-            <element signature="method#conditionToBreakPaginationLoop#0;class#RestAssuredClient#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/models/controllers/FAQsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/FAQmanagement/FAQsSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/bdd/stepDefinition/common/ApiCommonValidations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="121" column="5" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/FAQs/CreateFQAs.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gdt/bdd/runner/BDDTestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/enviroment/ScenarioContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gdt/baseClient/beans/RestIterationDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/enviroment/developEnv.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

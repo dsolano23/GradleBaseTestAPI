@@ -1,69 +1,84 @@
-2019-07-23 09:23:02 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
-2019-07-23 09:23:02 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
-2019-07-23 09:23:02 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /home/dsolano/sourceCode/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
-2019-07-23 09:23:03 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:03 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with valid basic values 
-2019-07-23 09:23:03 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
-2019-07-23 09:23:07 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
+2019-07-24 08:45:30 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-24 08:45:30 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : developEnv.properties
+2019-07-24 08:45:30 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/resources/enviroment/developEnv.properties
+2019-07-24 08:45:30 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:30 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with valid basic values 
+2019-07-24 08:45:30 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
+2019-07-24 08:45:32 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
 			    "id": "validIdValue",
 			    "code": "validCodeValue",
 			    "answer": "validAnswerValue",
 			    "question": "validQuestionValue",
 			    "link": "validLinkValue"
 			}"
-2019-07-23 09:23:07 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:07 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max code length value 
-2019-07-23 09:23:07 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
-2019-07-23 09:23:09 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
+2019-07-24 08:45:33 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:33 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max code length value 
+2019-07-24 08:45:33 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
+2019-07-24 08:45:34 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
 			    "id": "validIdValue",
 			    "code": "validCodeValue",
 			    "answer": "validAnswerValue",
 			    "question": "validQuestionValue",
 			    "link": "validLinkValue"
 			}"
-2019-07-23 09:23:09 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
-2019-07-23 09:23:09 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:09 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max answer length value 
-2019-07-23 09:23:09 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
-2019-07-23 09:23:11 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
+2019-07-24 08:45:34 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
+2019-07-24 08:45:34 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:34 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max answer length value 
+2019-07-24 08:45:34 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
+2019-07-24 08:45:35 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
 			    "id": "validIdValue",
 			    "code": "validCodeValue",
 			    "answer": "validAnswerValue",
 			    "question": "validQuestionValue",
 			    "link": "validLinkValue"
 			}"
-2019-07-23 09:23:11 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
-2019-07-23 09:23:11 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:11 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max question length value 
-2019-07-23 09:23:11 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
-2019-07-23 09:23:13 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
+2019-07-24 08:45:35 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
+2019-07-24 08:45:35 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:35 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max question length value 
+2019-07-24 08:45:35 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
+2019-07-24 08:45:37 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
 			    "id": "validIdValue",
 			    "code": "validCodeValue",
 			    "answer": "validAnswerValue",
 			    "question": "validQuestionValue",
 			    "link": "validLinkValue"
 			}"
-2019-07-23 09:23:13 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
-2019-07-23 09:23:13 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:13 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max link length value 
-2019-07-23 09:23:13 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
+2019-07-24 08:45:37 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
+2019-07-24 08:45:37 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:37 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max link length value 
+2019-07-24 08:45:37 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:117 - Endpoint: https://carrefour3.free.beeceptor.com/v1/faqs
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.b.c.RestAssuredClient:121 - << Response body: "{
 			    "id": "validIdValue",
 			    "code": "validCodeValue",
 			    "answer": "validAnswerValue",
 			    "question": "validQuestionValue",
 			    "link": "validLinkValue"
 			}"
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with valid basic values 
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max code length value 
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max answer length value 
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max question length value 
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
-2019-07-23 09:23:16 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max link length value 
-2019-07-23 09:23:16 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
-2019-07-23 09:23:17 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:81 - scenario failed *************************************
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with valid basic values 
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max code length value 
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max answer length value 
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max question length value 
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:67 - *************************************
+2019-07-24 08:45:38 | INFO  | [Test worker] c.g.e.ScenarioContext:68 -  Started Test Successful create a FAQ when the FAQ from have: Create a FAQ with max link length value 
+2019-07-24 08:45:38 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-24 08:45:39 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-24 13:13:10 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-24 13:13:10 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : null.properties
+2019-07-24 13:13:10 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/resources/enviroment/null.properties
+2019-07-24 13:13:10 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-24 13:13:10 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-24 13:14:31 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-24 13:14:31 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : null.properties
+2019-07-24 13:14:31 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/resources/enviroment/null.properties
+2019-07-24 13:14:31 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-24 13:14:32 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
+2019-07-24 13:14:47 | ERROR | [Test worker] c.g.b.r.BDDTestRunner:56 -  ******************* THE ENVIRONMENT VARIABLE IS OBLIGATED TO SET ***************** 
+2019-07-24 13:14:47 | INFO  | [Test worker] c.g.b.r.BDDTestRunner:61 -  Loading DEFAULT Environment Configuration File --------------------------- : null.properties
+2019-07-24 13:14:47 | DEBUG | [Test worker] c.g.u.EnvPropertiesManagement:72 - enviromentProperties: /media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI/src/test/resources/enviroment/null.properties
+2019-07-24 13:14:47 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:82 - Generating masterthought HTML reports .......
+2019-07-24 13:14:48 | DEBUG | [Test worker] c.g.b.r.BDDTestRunner:106 - Generated Masterthought HTML reports
