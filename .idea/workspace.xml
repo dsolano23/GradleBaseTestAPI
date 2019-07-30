@@ -156,6 +156,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="/media/dsolano/92d85316-776d-4481-b420-938f01a967ca/GradleBaseTestAPI" />
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1OjBaCrucgnzmN5hMkq4YJFXBML" />
   <component name="PropertiesComponent">
@@ -338,6 +339,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="para Victor" />
+    <option name="LAST_COMMIT_MESSAGE" value="para Victor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
