@@ -34,7 +34,7 @@ public class FAQsController extends RestAssuredClient {
         Scenario scenario = scenarioContext.getScenario();
         RequestDto requestDto = new RequestDto();
 
-        requestDto.setBody(createFAQsRequest.toString());
+        requestDto.addBody(createFAQsRequest);
         requestDto.setApiPath(CREATE_FAQs_URL);
 
         scenario.write("POST ----- Executed: - \n" + requestDto.toString());
@@ -53,7 +53,7 @@ public class FAQsController extends RestAssuredClient {
         Scenario scenario = scenarioContext.getScenario();
         RequestDto requestDto = new RequestDto();
 
-        requestDto.setBody(updateFAQsRequest.toString());
+        requestDto.addBody(updateFAQsRequest);
         requestDto.setApiPath(UPDATE_FAQ_URL);
 
         scenario.write("PUT ----- Executed: - \n" + requestDto.toString());

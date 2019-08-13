@@ -21,6 +21,7 @@ public class FAQsSteps {
      */
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(FAQsSteps.class);
 
+    private static final Integer stingMinLimitLength = 3;
     private static final Integer stingLimitLengthDefault = 255;
     private static final Integer stingLimitLengthCustomized = 300;
 
@@ -33,17 +34,17 @@ public class FAQsSteps {
     @Given("^The FAQ from with the data: code: (.+), answer: (.+), question: (.+), link: (.+)$")
     public void faqFromData(String code, String answer, String question, String link) throws Throwable {
         FAQsDto virtualFAQ = new FAQsDto();
-        if ((CucumberDataManagement.setValue(code))) {
-            virtualFAQ.setCode(CucumberDataManagement.getValidString(code,stingLimitLengthCustomized));
+        if ((CucumberDataManagement.shouldSetIt(code))) {
+            virtualFAQ.setCode(CucumberDataManagement.getValidString(code, stingMinLimitLength,stingLimitLengthCustomized));
         }
-        if ((CucumberDataManagement.setValue(answer))) {
-            virtualFAQ.setAnswer(CucumberDataManagement.getValidString(answer,stingLimitLengthDefault));
+        if ((CucumberDataManagement.shouldSetIt(answer))) {
+            virtualFAQ.setAnswer(CucumberDataManagement.getValidString(answer, stingMinLimitLength,stingLimitLengthDefault));
         }
-        if ((CucumberDataManagement.setValue(question))) {
-            virtualFAQ.setQuestion(CucumberDataManagement.getValidString(question,stingLimitLengthDefault));
+        if ((CucumberDataManagement.shouldSetIt(question))) {
+            virtualFAQ.setQuestion(CucumberDataManagement.getValidString(question, stingMinLimitLength,stingLimitLengthDefault));
         }
-        if ((CucumberDataManagement.setValue(link))) {
-            virtualFAQ.setLink(CucumberDataManagement.getValidString(link,stingLimitLengthCustomized));
+        if ((CucumberDataManagement.shouldSetIt(link))) {
+            virtualFAQ.setLink(CucumberDataManagement.getValidString(link, stingMinLimitLength,stingLimitLengthCustomized));
         }
         this.scenarioContext.put(FAQsController.CREATE_FAQs_FROM, virtualFAQ);
     }

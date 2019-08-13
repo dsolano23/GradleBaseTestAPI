@@ -21,7 +21,7 @@ import java.util.Map;
 
 public class RestAssuredClient {
 
-    private String mainUrl = (String) EnvPropertiesManagement.getProperty(EnvironmentConstantsNames.MAIN_URL,String.class);
+    private String mainUrl = (String) EnvPropertiesManagement.getProperty(EnvironmentConstantsNames.MAIN_URL, String.class);
 
     protected DeserializationContext deserializationContext;
     protected PaginationContext paginationContext;

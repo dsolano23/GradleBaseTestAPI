@@ -20,7 +20,7 @@ public class CreateFAQsRequest {
         this.question = faQsDto.getQuestion();
         this.link = faQsDto.getLink();
     }
-
+/*
     @Override
     public String toString() {
         return "{" + "\n\t\t" +
@@ -29,5 +29,5 @@ public class CreateFAQsRequest {
                 ", question='" + question + "\n\t\t" +
                 ", link='" + link + "\n\t" +
                 '}';
-    }
+    }*/
 }

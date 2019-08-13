@@ -72,6 +72,7 @@ public class RestIterationDto {
         }
 
         return "\tRespond{\n" +
+
                 "\t\t\tmethodType=" + this.response.getContentType() +
                 "\n\t\t\trequestHttpCode=" + this.response.getStatusCode() +
                 "\n\t\t\telapsedTime=" + elapsedTime +

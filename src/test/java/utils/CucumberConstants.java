@@ -14,11 +14,13 @@ public class CucumberConstants {
     public static final String ANY_VALUE = "anyValue";
     public static final String ID_NONEXISTENT = "nonexistent";
     public static final String NOT_ALPHA_NUMERIC = "notAlphaNumeric";
+    public static final String BELOW_LOWER_LIMIT = "belowLowerLimit";
+    public static final String RANDOM_VALUE = "randomValue";
+    public static final String EQUAL_LOWER_LIMIT = "equalLowerLimit";
+    public static final String ABOVE_LOWER_LIMIT = "aboveLowerLimit";
     public static final String BELOW_UPPER_LIMIT = "belowUpperLimit";
     public static final String EQUAL_UPPER_LIMIT = "equalUpperLimit";
     public static final String ABOVE_UPPER_LIMIT = "aboveUpperLimit";
-    public static final String BELOW_LOWER_LIMIT = "belowLowerLimit";
-    public static final String EQUAL_LOWER_LIMIT = "equalLowerLimit";
-    public static final String ABOVE_LOWER_LIMIT = "aboveLowerLimit";
+
 
 }

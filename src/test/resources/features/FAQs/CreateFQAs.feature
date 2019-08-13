@@ -36,7 +36,7 @@ Feature: FQAs Manager - CreateFQAs Resource - Validation
       | Try to create a FAQ with null link                | requestId-11 | nullValue       | Example11       | Example11       | nullValue       | 503      | 401          |
       | Try to create a FAQ with aboveUpperLimit link     | requestId-12 | aboveUpperLimit | Example12       | Example12       | aboveUpperLimit | 503      | 401          |
 
-  @CreateFQAsSuccessful
+  @CreateFQAsSuccessfull
     #-------------------------------- Check PUT of faqs Successful validation
   Scenario Outline: Successful create a FAQ when the FAQ from have: <objectOfTest>
     Given The FAQ from with the data: code: <code>, answer: <answer>, question: <question>, link: <link>
@@ -77,7 +77,7 @@ Feature: FQAs Manager - CreateFQAs Resource - Validation
       | Try to create a FAQ with null link                | nullValue       | Example11       | Example11       | nullValue       | 503      | 401          |
       | Try to create a FAQ with aboveUpperLimit link     | aboveUpperLimit | Example12       | Example12       | aboveUpperLimit | 503      | 401          |
 
-  @CreateFQAsSuccessful
+  @CreateFQAsSuccessfull
     #-------------------------------- Check PUT of faqs Successful validation
   Scenario Outline: Successful create a FAQ when the FAQ from have: <objectOfTest>
     Given The FAQ from with the data: code: validCodeValue, answer: validAnswerValue, question: validQuestionValue, link: validLinkValue

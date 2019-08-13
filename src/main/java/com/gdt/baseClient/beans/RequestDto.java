@@ -1,5 +1,9 @@
 package com.gdt.baseClient.beans;
 
+import com.beust.jcommander.internal.Maps;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gdt.baseClient.constants.HttpHeadersEnum;
 import lombok.Getter;
 import lombok.Setter;
@@ -26,7 +30,10 @@ public class RequestDto {
     public final static String SORT_DIR_QUERY_PARAM = "dir";
 
     public RequestDto() {
+        Map<String, Object> header = Maps.newHashMap();
+        header.put(HttpHeadersEnum.CONTENT_TYPE_JSON.headerKey, HttpHeadersEnum.CONTENT_TYPE_JSON.headerValue );
         headers = new HashMap<String, Object>();
+        this.setHeaders(header);
         pathParams = new HashMap<String, Object>();
         queryParams = new HashMap<String, Object>();
         multiValuedQueryParams = new HashMap<String, List<?>>();
@@ -50,6 +57,20 @@ public class RequestDto {
 
     public void addBody(String value) {
         this.body = value;
+    }
+
+    public void addBody(Object jsonObject) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = null;
+        try {
+            if (jsonObject != null){
+                objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+                json = objectMapper.writeValueAsString(jsonObject);
+            }
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        this.body = json;
     }
 
     public void addHeader(String key, Object value) {
@@ -101,7 +122,9 @@ public class RequestDto {
     @Override
     public String toString() {
 
+
         String headersFormatted="";
+        String queryParamsFormatted="";
         String bodyFormatted="";
         String multipartTextBodyFormatted="";
 
@@ -112,8 +135,21 @@ public class RequestDto {
                 headersFormatted = headersFormatted + "\n\t\t\t" + key + ": " + value;
             }
         }
+
+        if ( queryParams != null ) {
+            queryParamsFormatted = "?";
+            for(Map.Entry<String, Object> entry : queryParams.entrySet()) {
+                String key = entry.getKey();
+                String value = entry.getValue().toString();
+                queryParamsFormatted = queryParamsFormatted + key + "=" + value + "&";
+            }
+            queryParamsFormatted = queryParamsFormatted.substring(0,queryParamsFormatted.length() - 1);
+        }
+
         if (body !=null){
-            bodyFormatted = body.replace("\n","\n\t\t\t");
+            bodyFormatted =body.replace("{","{\n\t\t\t\t");
+            bodyFormatted = bodyFormatted.replace(",",",\n\t\t\t\t");
+            bodyFormatted = bodyFormatted.replace("}","\n\t\t\t\t}");
         }
         /*if (multiValuedQueryParams != null){
             for(Map.Entry<String, String> entry : multiValuedQueryParams().entrySet()) {
@@ -126,8 +162,9 @@ public class RequestDto {
         return "\t\tRequested{\n" +
                 "\t\t\turl='" + apiPath +
                 ",\n\t\t\theaders=" + headersFormatted +
-                ",\n\t\t\tbody='" + bodyFormatted +
-                ",\n\t\tmultipartTextBody=" + multipartTextBodyFormatted +
+                ",\n\t\t\tqueryParams=" + queryParamsFormatted +
+                "\n\t\t\tbody='" + bodyFormatted +
+                ",\n\t\t\tmultipartTextBody=" + multipartTextBodyFormatted +
                 "\n\t\t"+'}';
     }
 }

@@ -5,13 +5,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.gdt.baseClient.utils.PaginationContext;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Getter
 @Setter
-@ToString(exclude = {"logger"})
+//@ToString(exclude = {"logger"})
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class BasePageableJson extends AbstractBaseJson {
     protected Integer page;
